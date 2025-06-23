@@ -1,0 +1,536 @@
+1. Tomcat Basics
+Q1: Which of the following is NOT a valid way to stop the Tomcat server?
+A) Using shutdown.bat or shutdown.sh script
+B) Killing the Tomcat process via OS task manager
+C) Deleting the webapps directory
+D) Using the Tomcat Manager web application to stop an individual app
+
+Correct answer: C (Deleting webapps directory won't stop the server, just removes deployed apps)
+
+2. Servlet Basics
+Q2: Which of these classes is responsible for encapsulating client request data in a servlet?
+A) ServletResponse
+B) ServletRequest
+C) HttpServletResponse
+D) HttpServlet
+
+Correct answer: B (ServletRequest represents client request data)
+
+Q3: What happens if you override the service() method in a servlet but do not call super.service()?
+A) The servlet will handle all HTTP methods uniformly via your service() method
+B) The servlet will fail to compile
+C) Only GET requests will be processed automatically
+D) The servlet container will call doGet() and doPost() automatically
+
+Correct answer: A (Overriding service() handles all methods, but you lose default doGet()/doPost() behavior)
+
+3. Servlet Initialization
+Q4: Which of the following is true about servlet initialization parameters?
+
+A) Parameters set in ServletConfig are available to all servlets in the application
+B) Parameters set in ServletContext are available to a single servlet only
+C) ServletConfig parameters are per servlet, whereas ServletContext parameters are shared across all servlets
+D) Neither ServletConfig nor ServletContext support initialization parameters
+
+Correct answer: C
+
+4. Servlet Communication
+Q5: If you use request.getRequestDispatcher("page.jsp").forward(request, response);, which statement is FALSE?
+
+A) The URL in the browser does not change
+B) Control returns to the calling servlet after the forward
+C) Both request and response objects are passed to the destination resource
+D) You cannot write to the response after forward is called
+
+Correct answer: B (Control does NOT return to the caller after forward)
+
+Q6: What is the main difference between sendRedirect() and forward()?
+
+A) sendRedirect() is client-side, forward() is server-side
+B) Both methods change the URL in the browser
+C) forward() performs a new request, sendRedirect() does not
+D) Both methods transfer request attributes automatically
+
+Correct answer: A
+
+5. Session Handling
+Q7: Which of the following does NOT maintain session state across HTTP requests?
+
+A) URL rewriting
+B) Cookies
+C) Hidden form fields
+D) HTTP GET method
+
+Correct answer: D (GET itself does not maintain state; only methods like cookies, URL rewriting, hidden fields help)
+
+Q8: Which session destruction method is called when the session times out due to inactivity?
+
+A) sessionDestroyed() from HttpSessionListener
+B) sessionWillPassivate() from HttpSessionActivationListener
+C) valueUnbound() from HttpSessionBindingListener
+D) contextDestroyed() from ServletContextListener
+
+Correct answer: A
+
+6. Servlet Listeners
+Q9: Which listener interface can be used to detect when an attribute is added, removed, or replaced in a servlet request?
+
+A) ServletContextListener
+B) ServletRequestAttributeListener
+C) HttpSessionListener
+D) HttpSessionActivationListener
+
+Correct answer: B
+
+Q10: If you want to execute code just before the servlet context is destroyed, which listener would you implement?
+
+A) ServletContextListener
+B) HttpSessionListener
+C) ServletRequestListener
+D) HttpSessionAttributeListener
+
+Correct answer: A
+
+Tomcat Basics
+Q11: After deploying a new WAR file to the webapps folder, Tomcat:
+A) Automatically deploys the application without restarting
+B) Requires a server restart to deploy the new app
+C) Only deploys apps if the server is in debug mode
+D) Never auto-deploys WAR files
+
+Correct answer: A
+
+Servlet Basics
+Q12: What will happen if you define doGet() but not doPost() in an HttpServlet, and a POST request is sent?
+A) The doGet() method will handle the POST request
+B) The servlet container returns HTTP 405 Method Not Allowed
+C) The servlet throws a runtime exception
+D) The service() method handles the POST request by default
+
+Correct answer: B
+
+
+Q13: Which method(s) from the servlet lifecycle is called only once?
+A) init()
+B) service()
+C) destroy()
+D) Both init() and destroy()
+
+Correct answer: D
+
+Servlet Initialization
+Q14: When using both ServletConfig and ServletContext to get parameters, which one takes precedence if parameters have the same name?
+A) ServletConfig parameter overrides ServletContext
+B) ServletContext parameter overrides ServletConfig
+C) Neither overrides; they merge automatically
+D) It causes a runtime exception
+
+Correct answer: A
+
+Servlet Communication
+Q15: After calling response.sendRedirect("newpage.jsp"), what happens if you try to write more content to the response?
+A) Content is appended to the response normally
+B) Throws IllegalStateException
+C) Content is ignored because redirect commits response
+D) Response buffer is cleared and replaced
+
+Correct answer: C
+
+
+Q16: If you want to include content from another servlet without changing the URL or affecting the response status, which method should you use?
+A) sendRedirect()
+B) RequestDispatcher.include()
+C) RequestDispatcher.forward()
+D) HttpServletResponse.reset()
+
+Correct answer: B
+
+
+Session Handling
+Q17: Which of the following is true about URL rewriting for session tracking?
+A) It works only with GET requests
+B) It adds the session ID as a query parameter to URLs
+C) It requires the client to accept cookies
+D) It is the default session tracking method
+
+Correct answer: B
+
+
+Q18: Which method invalidates an HttpSession object and triggers session destruction events?
+A) invalidate()
+B) destroy()
+C) remove()
+D) expire()
+
+Correct answer: A
+
+
+Servlet Listeners
+Q19: Which listener can be used to track when a session attribute is added, removed, or replaced?
+A) HttpSessionListener
+B) HttpSessionAttributeListener
+C) ServletRequestListener
+D) ServletContextAttributeListener
+
+Correct answer: B
+
+
+Q20: Which of the following listeners is called when a session object is about to be passivated (serialized) due to server shutdown or failover?
+A) HttpSessionActivationListener
+B) HttpSessionListener
+C) ServletRequestListener
+D) ServletContextListener
+
+Correct answer: A
+
+Tomcat Basics
+Q21: What is the default port number for Tomcat HTTP connector?
+A) 8080
+B) 80
+C) 443
+D) 9090
+
+Correct answer: A
+
+
+Q22: In Tomcat’s server.xml, which element defines the HTTP connector?
+A) <Service>
+B) <Connector>
+C) <Engine>
+D) <Host>
+
+Correct answer: B
+
+
+Servlet Basics
+Q23: Which of the following is true about the servlet lifecycle?
+A) service() is called before init()
+B) destroy() can be called multiple times
+C) init() is called once per servlet instance
+D) service() is called only once
+
+Correct answer: C
+
+
+Q24: When working with form data in a servlet using HttpServletRequest, which method is used to get a parameter value?
+A) getParameter()
+B) getAttribute()
+C) getHeader()
+D) getCookies()
+
+Correct answer: A
+
+
+Servlet Initialization
+Q25: Which of these statements about ServletConfig and ServletContext is false?
+A) ServletConfig is created by the servlet container for each servlet
+B) ServletContext is shared among all servlets in an application
+C) ServletContext parameters can be overridden by servlet-specific ServletConfig parameters
+D) Both can be used to read initialization parameters
+
+Correct answer: C
+
+
+Servlet Communication
+Q26: Which HTTP status code is sent automatically by the container when sendRedirect() is called?
+A) 301
+B) 302
+C) 404
+D) 500
+
+Correct answer: B
+
+
+Q27: What will happen if you call forward() after the response is committed?
+A) Forward succeeds normally
+B) An IllegalStateException is thrown
+C) The response is reset and forward succeeds
+D) The client gets a 404 error
+
+Correct answer: B
+
+
+Session Handling
+Q28: Which of these methods returns the current session associated with a request, or creates one if it doesn’t exist?
+A) getSession(false)
+B) getSession(true)
+C) getSession()
+D) Both B and C
+
+Correct answer: D
+
+Q29: What is the default timeout interval for an HTTP session in most servlet containers?
+A) 5 minutes
+B) 10 minutes
+C) 30 minutes
+D) 60 minutes
+
+Correct answer: C
+
+
+Servlet Listeners
+Q30: The ServletRequestListener is primarily used to track which event?
+A) Creation and destruction of HTTP sessions
+B) Creation and destruction of servlet requests
+C) Changes to servlet context attributes
+D) Addition/removal of session attributes
+
+Correct answer: B
+
+
+Q31: Which listener interface is used to get notifications when an attribute is bound or unbound from an HTTP session object itself?
+A) HttpSessionBindingListener
+B) HttpSessionAttributeListener
+C) HttpSessionListener
+D) ServletContextListener
+
+Correct answer: A
+
+Q32: Which method from ServletContext can be used to access static configuration files (like XML or text) within WEB-INF?
+A) getParameter()
+B) getResourceAsStream()
+C) getAttribute()
+D) getResourcePath()
+
+Correct answer: B
+
+Q33: Which of the following methods is provided by the ServletContext interface?
+A) getInitParameter()
+B) getServletConfig()
+C) getServletInfo()
+D) getSession()
+
+Correct answer: A
+
+Q34: How is the session ID typically maintained between the client and the server when using HttpSession?
+A) Through a hidden field in forms
+B) In the URL only
+C) Via a cookie (JSESSIONID) by default
+D) In the HTTP header Authorization
+
+Correct answer: C
+
+Q35: Which method can be used to check whether a session ID was obtained from a cookie?
+A) isSessionFromCookie()
+B) isRequestedSessionIdFromCookie()
+C) isSessionIdValid()
+D) isRequestedFromURL()
+
+Correct answer: B
+
+Q36: Which method is used to set request-scoped attributes in a servlet?
+A) setParameter()
+B) setAttribute()
+C) setHeader()
+D) putAttribute()
+
+Correct answer: B
+
+Q37: What will request.getSession(false) return if no session exists?
+A) A new session
+B) The existing session
+C) null
+D) Throws an exception
+
+Correct answer: C
+
+Q38: Can a servlet access another servlet's init parameters using ServletConfig?
+A) Yes
+B) No
+C) Only if declared globally
+D) Only using reflection
+
+Correct answer: B
+
+Q39: What is the main difference between <context-param> and <init-param> in web.xml?
+A) <context-param> is per servlet; <init-param> is global
+B) Both are per servlet
+C) <context-param> is global; <init-param> is per servlet
+D) They are interchangeable
+
+Correct answer: C
+
+Q40: Which method is used to encode a URL to include session ID when cookies are disabled?
+A) request.encodeRedirectURL()
+B) response.encodeURL()
+C) response.encodeRedirectURL()
+D) request.encodeURL()
+
+Correct answer: B
+
+Q41: Which of the following ensures that a servlet is thread-safe?
+A) Making it synchronized
+B) Using local variables only
+C) Extending GenericServlet
+D) Calling super.init() in init() method
+
+Correct answer: B
+
+Q42: How many instances of a servlet are created by default in a servlet container?
+A) One per request
+B) One per user session
+C) Only one per servlet declaration
+D) One per thread
+
+Correct answer: C
+
+Q43: Which method in HttpSession helps you retrieve all attribute names stored in the session?
+A) getAllAttributes()
+B) getAttributeNames()
+C) getAttributes()
+D) listAttributes()
+
+Correct answer: B
+
+Q44: What is the output of calling ServletContext.getRealPath("/")?
+A) Application's root directory on the server's file system
+B) Virtual path of the context
+C) Servlet name
+D) URL to the servlet
+
+Correct answer: A
+
+Q45: In which scenario is HttpSessionBindingListener used?
+A) When a session is created or destroyed
+B) When a servlet binds to a context
+C) When an object wants to get notified of being bound/unbound to a session
+D) When a cookie is created
+
+Correct answer: C
+
+Q46: In web.xml, which element defines the URL pattern that maps to a specific servlet?
+A) <context-param>
+B) <servlet-class>
+C) <servlet-mapping>
+D) <listener>
+
+Correct answer: C
+
+Q47: What is the direct superclass of HttpServlet?
+A) Object
+B) Servlet
+C) GenericServlet
+D) HttpServletRequest
+
+Correct answer: C
+
+Q48: What will happen if a servlet throws an exception and there's no error-page configured?
+A) The container redirects to index.html
+B) The server sends a 404 response
+C) A stack trace or error page is shown by default
+D) The servlet is reinitialized
+
+Correct answer: C
+
+Q49: Which method shows the client what server is receiving?
+A) doGet
+B) doPost
+C) doTrace
+D) doOption
+
+Correct answer: C
+
+Q50: Which of the following code can be used to set the locale of the response?
+A) request.setLocale(locale)
+B) response.setLocale(locale)
+C) header.setLocale(locale)
+D) None of the above
+
+Correct answer: B
+
+Q51: Which of the following request attributes that an error-handling servlet can access to analyze errors?
+A) javax.servlet.error.status_code
+B) javax.servlet.error.exception_type
+C) javax.servlet.error.message
+D) All of the above
+
+Correct answer: D
+
+Q52: Which of the following are interfaces?
+
+	1.ServletContext
+
+	2.Servlet
+
+	3.GenericServlet
+
+	4.HttpServlet
+
+A) 1,2,3,4
+B) 1,2
+C) 1,3,4
+D) 1,4
+
+Correct answer: B
+
+Q53: Which of the following code returns the port number on which this request was received?
+A) response.getServerPort()
+B) request.getServerPort()
+C) header.getServerPort()
+D) None of the above
+
+Correct answer: B
+
+Q54: How constructor can be used for a servlet?
+A) Initialization
+B) Constructor function
+C) Initialization and Constructor function
+D) Setup() method
+
+Correct answer: B
+
+Q55: Which of the following method sets application/context init parameter?
+A) setParameter(String name,String value)
+B) It's not possible in the method
+C) setParameter(String name,Object value)
+D) setParameter(Object name,Object value)
+
+Correct answer: B
+
+Q56: Which method is used to specify before any lines that uses the PrintWriter?
+A) setPageType()
+B) setContextType()
+C) setContentType()
+D) setResponseType()
+
+Correct answer: C
+
+Q57: Which of the following code is used to get country/region code in servlets?
+A) request.getCountry()
+B) Locale.getCountry()
+C) response.getCountry()
+D) None of the above
+
+Correct answer: B
+
+Q58: RequestDispatcher object is used:
+A) to include other resources
+B) to include an image
+C) to include XML object
+D) to include e-mailing response
+
+Correct answer: A
+
+Q59: Which of the following code retrieves the name of the HTTP Method?
+A) header.getMethod()
+B) response.getMethod()
+C) request.getMethod()
+D) None of the above
+
+Correct answer: C
+
+Q60: Which of the following code can be used to send an error response to the client using the specified status code and error message?
+A) request.sendError(statusCode,message)
+B) response.sendError(statusCode,message)
+C) header.sendError(statusCode,message)
+D) None of the above
+
+Correct answer: B
+
+Q61: Which object of HttpSession can be used to view and manipulate information about a session?
+A) session identifier
+B) creation time
+C) last accessed time
+D) All mentioned above
+
+Correct answer: D

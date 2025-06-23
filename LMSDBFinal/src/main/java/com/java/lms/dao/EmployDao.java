@@ -1,0 +1,12 @@
+package com.java.lms.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.java.lms.model.Employ;
+
+public interface EmployDao {
+	public Employ searchEmp(int empId) throws ClassNotFoundException, SQLException;
+	List<Employ> showEmp() throws ClassNotFoundException, SQLException;
+	public void updateleave(int empId, int leaveId) throws ClassNotFoundException, SQLException;
+}

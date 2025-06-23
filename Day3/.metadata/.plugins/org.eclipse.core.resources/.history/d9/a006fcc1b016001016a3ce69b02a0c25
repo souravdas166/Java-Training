@@ -1,0 +1,5 @@
+package com.java.inh;
+
+public class Derived {
+
+}

@@ -1,0 +1,10 @@
+package com.java.admin.dao;
+
+import com.java.admin.model.EmailVerificationOtp;
+import com.java.admin.model.User;
+
+public interface AdminDao {
+	boolean signUp(User user, String otpInput);
+	boolean saveEmailOtp(EmailVerificationOtp otp);
+	
+}

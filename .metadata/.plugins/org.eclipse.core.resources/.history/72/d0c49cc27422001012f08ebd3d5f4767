@@ -1,0 +1,5 @@
+package com.java.lms.dao;
+
+public interface EmployDao {
+
+}

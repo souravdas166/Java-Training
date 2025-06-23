@@ -1,0 +1,186 @@
+package com.java.lms.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.java.lms.model.Employ;
+import com.java.lms.model.Leave;
+import com.java.lms.model.LeaveType;
+import com.java.lms.model.Status;
+import com.java.lms.util.ConnectionHelper;
+
+public class LeaveDaoImpl implements LeaveDao{
+
+	@Override
+	public String applyLeave(int empId, Date LeaveStartDate, Date LeaveEndDate, LeaveType LeaveType,
+			String LeaveReason) throws ClassNotFoundException, SQLException {
+		
+		
+		Date currentDate = new Date(System.currentTimeMillis());
+		
+		if(LeaveStartDate.before(currentDate) || LeaveEndDate.before(currentDate)) {
+			return "Leave start or end date cannot be in the past.";
+		}
+		if (LeaveStartDate.after(LeaveEndDate)) {
+	        return "Leave start date cannot be after leave end date.";
+	    }
+		
+		int leaveDays = calculateLeaveDays(LeaveStartDate,  LeaveEndDate);
+		int availableleave = getleave(empId);
+		
+		if (leaveDays > availableleave) {
+	        return "You do not have enough leave balance for this request.";
+	    }
+		
+		
+		
+		String cmd = "INSERT INTO Leave_History (LEAVE_NO_OF_DAYS, LEAVE_MNGR_COMMENTS, EMP_ID, " +
+                "LEAVE_START_DATE, LEAVE_END_DATE, LEAVE_TYPE, LEAVE_STATUS , LEAVE_REASON) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+		
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		
+		pstm.setInt(1, leaveDays);
+	    pstm.setString(2, "");
+	    pstm.setInt(3, empId);
+	    pstm.setDate(4, LeaveStartDate);
+	    pstm.setDate(5, LeaveEndDate); // Assuming manager comments not added during application
+	    pstm.setString(6, LeaveType.toString());
+	    pstm.setString(7, "PENDING");
+	    pstm.setString(8, LeaveReason);
+	    
+	    pstm.executeUpdate();
+	    return "Record inserted successfully.";
+}
+	
+	public int getleave(int empId) throws SQLException, ClassNotFoundException {
+		
+		String cmd = "Select EMP_AVAIL_LEAVE_BAL from Employee where EMP_ID =?";
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		pstm.setInt(1, empId);
+		
+		ResultSet rs = pstm.executeQuery();
+		if(rs.next()) {
+			return rs.getInt("EMP_AVAIL_LEAVE_BAL");
+		}
+		else {
+			return 0;
+		}
+	}	
+	
+		public int calculateLeaveDays(Date LeaveStartDate, Date LeaveEndDate) {
+			long diffInMillis = LeaveEndDate.getTime() - LeaveStartDate.getTime();
+		    return (int) (diffInMillis / (1000 * 60 * 60 * 24)) + 1;
+		}
+
+		@Override
+		public List<Leave> searchleavebyEmpID(int empId) throws ClassNotFoundException,SQLException {
+			
+			String cmd = "select * from Leave_History where EMP_ID = ?";
+			Connection conn = ConnectionHelper.getConnection();
+			PreparedStatement pstm = conn.prepareStatement(cmd);
+			pstm.setInt(1, empId);
+			
+			List<Leave> display = new ArrayList<Leave>();
+			ResultSet rs = pstm.executeQuery();
+			while(rs.next()) {
+				Leave leave = new Leave();
+				leave.setEmpId(rs.getInt("Emp_Id"));
+				leave.setLeaveId(rs.getInt("LEAVE_ID"));
+				leave.setTotalnoLeave(rs.getInt("LEAVE_NO_OF_DAYS"));
+				leave.setMngrComnt(rs.getString("LEAVE_MNGR_COMMENTS"));
+				leave.setLeavestartDt(rs.getDate("LEAVE_START_DATE"));
+				leave.setLeaveEndDt(rs.getDate("LEAVE_END_DATE"));;
+				leave.setLeavetype(LeaveType.valueOf(rs.getString("LEAVE_TYPE")));
+				leave.setLeavestatus(Status.valueOf(rs.getString("LEAVE_STATUS"))); 
+				leave.setLeaveReason(rs.getString("LEAVE_REASON"));
+				display.add(leave);
+			}
+			return display;
+		}
+
+		@Override
+		public List<Leave> showpendingLeave(int managerId) throws ClassNotFoundException, SQLException {
+			String cmd = "select * from leave_history where emp_id in\r\n"
+					+ "(\r\n"
+					+ "select Emp_Id from employee where emp_manager_id= ? \r\n"
+					+ ") and leave_status = 'PENDING'";
+			Connection conn = ConnectionHelper.getConnection();
+			PreparedStatement pstm = conn.prepareStatement(cmd);
+			pstm.setInt(1, managerId);
+			ResultSet rs = pstm.executeQuery();
+			List<Leave> display = new ArrayList<Leave>();
+			if(rs.next()) {
+				Leave leave = new Leave();
+				leave.setEmpId(rs.getInt("Emp_Id"));
+				leave.setLeaveId(rs.getInt("LEAVE_ID"));
+				leave.setTotalnoLeave(rs.getInt("LEAVE_NO_OF_DAYS"));
+				leave.setMngrComnt(rs.getString("LEAVE_MNGR_COMMENTS"));
+				leave.setLeavestartDt(rs.getDate("LEAVE_START_DATE"));
+				leave.setLeaveEndDt(rs.getDate("LEAVE_END_DATE"));;
+				leave.setLeavetype(LeaveType.valueOf(rs.getString("LEAVE_TYPE")));
+				leave.setLeavestatus(Status.valueOf(rs.getString("LEAVE_STATUS"))); 
+				leave.setLeaveReason(rs.getString("LEAVE_REASON"));
+				display.add(leave);
+			}
+			return display;
+		}
+		@Override
+		public String manageLeaveDao(int leaveId, int mgrId, boolean isAccepted, String mgrComment) throws ClassNotFoundException, SQLException {
+			Connection conn = ConnectionHelper.getConnection();
+	        String query = "SELECT * FROM leave_history WHERE leave_id = ?";
+	        PreparedStatement pstm = conn.prepareStatement(query);
+	         
+	        pstm.setInt(1, leaveId);
+	        ResultSet rs = pstm.executeQuery();
+
+	        if (!rs.next()) {
+	            return "Leave request not found.";
+	        }
+
+	        int empId = rs.getInt("emp_id");
+	        int noOfDays = rs.getInt("leave_no_of_days");
+	        String leaveStatus = isAccepted ? "APPROVED" : "DENIED";
+	        
+	        EmployDao employDao = new EmployDaoImpl();
+	        Employ employee = employDao.searchEmp(empId);
+
+	        if (isAccepted) {
+	            // Subtract leave days if APPROVED
+	            int updatedBalance = employee.getEmpAvlLeave() - noOfDays;
+	            employee.setEmpAvlLeave(updatedBalance);
+	            employDao.updateleave(empId, updatedBalance);
+	        } else {
+	            // Add leave days back if DENIED
+	            int updatedBalance = employee.getEmpAvlLeave() + noOfDays;
+	            employee.setEmpAvlLeave(updatedBalance);
+	            employDao.updateleave(empId, updatedBalance);
+	        }
+
+
+	        String updateQuery = "UPDATE leave_history SET LEAVE_STATUS = ?, LEAVE_MNGR_COMMENTS = ? WHERE leave_id = ?";
+	        pstm = conn.prepareStatement(updateQuery);
+	        pstm.setString(1, leaveStatus);
+	        pstm.setString(2, mgrComment);
+	        pstm.setInt(3, leaveId);
+
+	        int updatedRows = pstm.executeUpdate();
+
+	        if (updatedRows > 0) {
+	            return "Leave request " + (isAccepted ? "approved" : "denied") + " successfully.";
+	        } else {
+	            return "Failed to update leave request.";
+	        }
+		}
+}	
+		
+	
+
+

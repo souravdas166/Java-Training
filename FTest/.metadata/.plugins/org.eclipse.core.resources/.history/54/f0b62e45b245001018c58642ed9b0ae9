@@ -1,0 +1,5 @@
+package com.java.admin.util;
+
+public class SessionHelper {
+
+}

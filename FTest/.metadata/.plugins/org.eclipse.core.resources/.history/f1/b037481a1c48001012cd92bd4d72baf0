@@ -1,0 +1,53 @@
+package com.java.admin.service;
+
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Random;
+
+import com.java.admin.dao.AdminDaoImpl;
+import com.java.admin.model.EmailVerificationOtp;
+import com.java.admin.model.OtpStatus;
+import com.java.admin.model.User;
+import com.java.admin.util.MailSend;
+
+public class AdminService {
+
+    private AdminDaoImpl dao = new AdminDaoImpl();
+
+    public boolean sendEmailOtp(String email) {
+        // Generate 6-digit OTP
+        String otpCode = String.format("%06d", new Random().nextInt(999999));
+
+        // Set expiry time 10 minutes from now
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.MINUTE, 10);
+        Timestamp expiry = new Timestamp(calendar.getTimeInMillis());
+        Timestamp now = new Timestamp(System.currentTimeMillis());
+
+        EmailVerificationOtp otp = new EmailVerificationOtp();
+        otp.setEmail(email);
+        otp.setOtpCode(otpCode);
+        otp.setCreatedAt(now);
+        otp.setExpiresAt(expiry);
+        otp.setStatus(OtpStatus.ACTIVE);
+
+        // Send email OTP
+        String message = "Your OTP for email verification is: " + otpCode;
+        try {
+            MailSend.sendInfo(email, "Email Verification OTP", message);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false; // If email fails, abort saving OTP
+        }
+
+        return dao.saveEmailOtp(otp);
+    }
+
+    
+
+    public boolean registerUser(User user, String otp) {
+        // Store OTP temporarily in passcode for DAO verification
+       
+        return dao.signUp(user,otp);
+    }
+}

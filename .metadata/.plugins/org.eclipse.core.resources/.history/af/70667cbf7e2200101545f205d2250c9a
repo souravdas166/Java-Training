@@ -1,0 +1,58 @@
+package com.java.lms.main;
+
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import com.java.lms.dao.EmployDao;
+import com.java.lms.dao.EmployDaoImpl;
+
+public class LMSDbMain {
+	static Scanner sc;
+	
+	
+	static {
+		sc = new Scanner(System.in);
+	}
+	
+	public static void main(String[] args) {
+		int choice;
+		do {
+			System.out.println("\n Welcome to Leave Management System:");
+			System.out.println("Enter The option for your choice:");
+            System.out.println("Enter 1 to Search Employ ");
+            
+            choice = sc.nextInt();
+            try {
+            switch(choice) {
+            case 1: 
+				searchEmpMain();
+            	break;
+            case 2:
+				showEmpMain();
+				break;
+            catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            }
+		}while(choice != 0);
+            
+	}
+
+		public static void showEmpMain() throws ClassNotFoundException, SQLException {
+			EmployDao employDao = new EmployDaoImpl();
+		System.out.println(employDao.showEmp());
+		
+	}
+
+	public static void searchEmpMain() throws ClassNotFoundException, SQLException{
+		int empid;
+		EmployDao employDao = new EmployDaoImpl();
+		System.out.println("Enter Emp Id To Search");
+		empid = sc.nextInt();
+		System.out.println(employDao.searchEmp(empid));
+	}
+}

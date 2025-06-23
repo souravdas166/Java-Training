@@ -1,0 +1,5 @@
+package com.java.lmsdb.model;
+
+public class LeaveType {
+	EL,ML,PL;
+}

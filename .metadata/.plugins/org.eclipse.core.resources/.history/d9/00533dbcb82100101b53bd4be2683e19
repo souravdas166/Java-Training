@@ -1,0 +1,5 @@
+package com.java.lmsdb.util;
+
+public class ConnectionHelper {
+
+}

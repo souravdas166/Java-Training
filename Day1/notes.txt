@@ -1,0 +1,279 @@
+Object Oriented Programming : It is an approach that provides a way of modularizing programming, that which can be used to create small partition memory area for both data and objects, which are to be used as templates for creating copies of such modules on demand. 
+
+Object : 
+
+An object is a real world entity, that which possess 3 characterstics known as
+
+	(i) State
+
+	(ii) Behaviour
+
+	(iii) Identity 
+
+OOPS features : 
+_______________
+
+1) Encapsulation : Wrapping up of data and functions into a single unit known as encapsulation. 
+
+2) Abstraction : Hiding the irrelevant details of an object, that do not contribute to its essential characterstics known as Abstraction. 
+
+*** Encapsulation focuses on showing the relevant details, where abstraction focuses on hiding the irrelevant details ***
+
+3) Inheritance : Deriving a new entity from already existing entity known as inheritance. Through inheritance, we can reduce the size of the program. 
+
+4) Polymorphism : The ability to take more than one form known as polymorphism. 
+
+class : A class is a template or blueprint, that which contains combination of data members and member functions. 
+
+Members of the class can be accessable by using instance of the class. 
+
+class class_name 
+{  
+   data members;
+   member functions;
+}
+
+Why Java : 
+__________
+
+1) Platform Independence : Write Once and Apply for all types
+
+2) Console, Windows, WebApp, Mobile Apps : 
+
+3)  Packages : Contains group of related classes and interfaces that which belongs to one common group. If you want to overcome the naming conflicts between classes then you need the help of packages. 
+
+Java Features : 
+________________
+
+1) Simple : Java uses simple C/C++ syntaxes, as a programmer no need to take care of internal details like memory management etc... as how much memory allocated to run the program, the same amount of memory will be reallocated automatically. 
+
+2) Object Oriented : Java supports all object oriented programming features. 
+
+3) Compiled and Interpreted : Java Programs are compiled first, during compilation java code will be converted into bytecode, then .class file will be created. In interpretation it reads the bytecode line by line and executes. 
+
+4) Portable : Ability to run the program without changing the source code, java programs are programs that can run on any env. without changing the source code. 
+
+5) Securable : There are various levels of security as
+
+	(i) Compiler Level
+
+	(ii) Bytecode Level
+
+	(iii) Class Loader Level 
+
+6) Distributed : By using java, we can implement all distributed and robust applicaions. 
+
+Java Architecture : 
+____________________
+
+1) Java Program : Java code, that which stored with extension .java
+
+2) Java Class : Java code after compilation its converted into bytecode, then .class file will be created. 
+
+3) JVM (Java Virtual Machine) 
+
+    (i) Class Loader : Used to load the classes, that which are required to run the program.  
+
+	There are 2 types of class loaders known as 
+		
+		(a) Primordial Class Loader : Used to load all predefined system classes.
+
+		(b) Class Loader Objects : Used to load all user-defined classes 
+
+    (ii) JIT Compiler : Converts the bytecode into CPU specified format. 
+
+    (iii) Execution Manager : Contain QUEUE of programs which are ready to run, where we can execute the program. 
+
+Before execution it needs to undergone security authentication.
+
+4) Java API : It provides runtime env, that which allows you to run the java program. 
+
+JDK and JRE are the part of java api. 
+
+Data Types :
+____________
+
+There are various types of data types as 
+
+	(i) value types : int, float, double, char, Boolean,byte,short,long etc...
+
+	(ii) reference types : String, Object, user-defined 
+
+The default package in java is java.lang
+
+The top level class in java is Object. 
+
+java.lang.Object is the top level class. 
+
+System.out.println() -> Used to display any value or message. 
+
+	System -> class
+	out -> Console 
+	println() => Method. 
+
+You can define method main() as 
+
+public static void main(String[] args) {
+...
+...
+...
+}
+
+main() method must be static, as no class object supposed to call the method main().
+
+Operators : 
+____________
+
+  (i) Arithmetic 
+
+	+
+  	-
+	*
+	/
+	%
+
+  (ii) relational
+
+	>
+	>=
+	< 
+	<=
+	==
+	!=
+
+  (iii) Logical
+
+	&&
+	||
+	!
+ 
+   (iv) equality
+	=
+
+   (v) Unary Operators
+
+	++, -- 
+
+Access Modifiers : 
+___________________
+
+private : Allows you to access members within current class.
+
+public : Allows you to access members in entire application.
+
+protected : Allows you to access members within current/derived class.
+
+friendly : By default java possess friendly access modifier, allows you to access members within all classes of current package. 
+
+int x=12;
+int y = x++ + ++x;
+A  12  + 14
+M  13	14x	
+
+char ch1='A';
+		int x=ch1;
+		System.out.println(x);
+
+		boolean flag = true;
+	 	int x = flag;
+		System.out.println(x);
+
+		int x=12;
+		byte b = x;
+
+		int x=5;
+		int y = x+8*3-2+6;
+		
+		int x;
+		System.out.println(x);
+
+		byte b=125;
+		b+=6;
+		System.out.println(b);
+
+You can create an object to the class, as
+
+class_name obj = new class_name();
+
+Control Structures : Used to define the flow of the program. 
+
+There are 2 types of control structures known as 
+
+	(i) Branching
+
+if...else : Executes the statement(s) based on the condition. 
+
+	if (condition) {
+	   statement(s);
+	} else {
+	   statement(s);
+	}
+
+	(ii) Looping 
+
+1) Write a Program to implement sample current bill as take no.of units as input and calculate bill as
+
+first 90 units 1 rs per unit
+91 to 150 units 1.5 rs per unit
+151 to 200 units 2 rs per unit
+201 to 250 units 2.5 rs per unit
+251+ units 3rs per unit 
+for example : 
+If units are 180 then 
+(90*1) + (60 * 1.5) + (30 * 2) 
+
+Write a program to display max of 3 numbers 
+
+Switch...case : Used to define the menu-driven programs. 
+
+switch(expression) {
+  case expression1 : 
+	statement(s);
+	break;
+  case expression2 : 
+	statement(s);
+	break;
+  ...
+  ...
+  ...
+  default : 
+	statement(s);
+	break;
+}
+
+What is yield : 
+
+Yield keyword lets us exists a switch expression by returning a value that becomes the value of switch expression.
+This means we can assign the value of a switch expression to a variable. 
+
+Lastly, by using yield in switch... we can get implicit check that we are covering all cases. 
+
+Write a Program to return Mentorname from switch..case as
+for "Raj","Keerthana" mentor is Sumanth
+    "Pavan","Prajwal" mentor is "Siddhartha"
+    "Santosh","Vidya" mentor is "Murali"
+    "Sekhar","John" Mentor is Gayathri
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

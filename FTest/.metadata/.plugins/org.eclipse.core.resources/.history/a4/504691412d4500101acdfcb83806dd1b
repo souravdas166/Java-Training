@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.java.admin.model.User" table="User">
+        <id name="empId" column="EmpId">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstName" column="FirstName" type="java.lang.String" />
+        <property name="lastName" column="LastName" type="java.lang.String" />
+        <property name="username" column="UserName" type="java.lang.String" unique="true" />
+        <property name="passcode" column="Passcode" type="java.lang.String" />
+        <property name="email" column="Email" type="java.lang.String" unique="true" />
+        
+        <!-- Enum mapping as string -->
+        <property name="status" column="Status" type="java.lang.String" />
+    </class>
+</hibernate-mapping>

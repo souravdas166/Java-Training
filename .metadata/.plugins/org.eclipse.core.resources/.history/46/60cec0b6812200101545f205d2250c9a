@@ -1,0 +1,6 @@
+package com.java.lms.dao;
+
+public interface LeaveDao {
+	public String applyLeave(int empId, LeaveStartDate, LeaveEndDate, LeaveType , String LeaveReason);
+
+}

@@ -1,0 +1,44 @@
+package com.java.admin.dao;
+
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
+
+import com.java.admin.model.User;
+import com.java.admin.util.SessionHelper;
+
+public class DaoImpl implements AdminDao {
+
+    @Override
+    public boolean signUp(User userInput) {
+        Transaction transaction = null;
+
+        try (Session session = SessionHelper.getConnection().openSession()) {
+            // Check for existing username or email
+            Criteria criteria = session.createCriteria(User.class)
+                .add(Restrictions.or(
+                    Restrictions.eq("username", userInput.getUsername()),
+                    Restrictions.eq("email", userInput.getEmail())
+                ));
+
+            List existingUsers = criteria.list();
+
+            if (!existingUsers.isEmpty()) {
+                return false; // Duplicate username/email
+            }
+
+            transaction = session.beginTransaction();
+            session.save(userInput);
+            transaction.commit();
+            return true;
+
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+            return false;
+        }
+    }
+}

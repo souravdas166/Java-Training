@@ -1,0 +1,268 @@
+How do you define a managed bean in JSF 2.0 without using annotations?
+a) Using <bean> in web.xml
+b) Using <managed-bean> in faces-config.xml
+c) Using <context-param>
+d) Using @ManagedBean only
+✔️ Answer: b
+
+Which of the following is a valid scope in faces-config.xml?
+a) view
+b) application
+c) global
+d) singleton
+✔️ Answer: b
+
+What tag is used to define a navigation rule in faces-config.xml?
+a) <navigation-case>
+b) <to-view>
+c) <faces-config-rule>
+d) <command-case>
+✔️ Answer: a
+
+In JSF 2.0, which file is mandatory to configure when annotations are NOT used?
+a) web.xml
+b) index.xhtml
+c) faces-config.xml
+d) beans.xml
+✔️ Answer: c
+
+In faces-config.xml, how do you specify that a bean should be in session scope?
+a) <scope>session</scope>
+b) <managed-bean-scope>session</managed-bean-scope>
+c) <bean-scope>session</bean-scope>
+d) <scope type="session"/>
+✔️ Answer: b
+
+If a bean is defined in faces-config.xml and @ManagedBean is also used in the class, which takes precedence?
+a) Annotation
+b) XML
+c) Both merge
+d) It causes an error
+✔️ Answer: b
+(XML-based config overrides annotations if both are present)
+
+What is the purpose of faces-config.xml in JSF applications?
+a) To configure web services
+b) To define bean lifecycles and navigation rules
+c) To configure EJBs
+d) To style JSF pages
+✔️ Answer: b
+
+Which XML tag in faces-config.xml is used to define a navigation rule?
+a) <navigation-rule>
+b) <route-mapping>
+c) <redirect>
+d) <page-rule>
+✔️ Answer: a
+
+Which file must reference faces-config.xml to integrate with a JSF 2.0 application?
+a) persistence.xml
+b) web.xml
+c) beans.xml
+d) index.xhtml
+✔️ Answer: b
+
+In JSF 2.0, which annotation is used to define a managed bean without requiring configuration in faces-config.xml?
+a) @Inject
+b) @Component
+c) @ManagedBean
+d) @Bean
+✔️ Answer: c
+
+Which of the following JSF scopes is the shortest-lived?
+a) @SessionScoped
+b) @ApplicationScoped
+c) @RequestScoped
+d) @ViewScoped
+✔️ Answer: c
+
+What is the role of the @ViewScoped annotation in JSF 2.0?
+a) Maintains bean data for the entire application
+b) Keeps bean alive as long as the user interacts with the same JSF page/view
+c) Stores data between two views
+d) Works exactly like @RequestScoped
+✔️ Answer: b
+
+Which JSF 2.0 tag library namespace is correct for Facelets?
+a) http://java.sun.com/jsf/html
+b) http://xmlns.jcp.org/jsf/html
+c) http://java.sun.com/jsf/core
+d) http://jsf.org/tags
+✔️ Answer: b
+
+Which lifecycle phase comes right before the "Invoke Application" phase in JSF 2.0?
+a) Apply Request Values
+b) Update Model Values
+c) Process Validations
+d) Render Response
+✔️ Answer: b
+
+Which component in JSF is used to create dynamic navigation using outcomes?
+a) <h:outputText>
+b) <h:commandLink>
+c) <h:form>
+d) <h:dataTable>
+✔️ Answer: b
+
+Which tag is used to forward a request to another resource?
+a) <jsp:include>
+b) <jsp:useBean>
+c) <jsp:forward>
+d) <jsp:scriptlet>
+✔️ Answer: c
+
+What does <jsp:include> do at request time?
+a) Includes content at compile time
+b) Includes content only from static files
+c) Includes content dynamically at request time
+d) Does nothing
+✔️ Answer: c
+
+What is the role of <jsp:param> inside <jsp:forward> or <jsp:include>?
+a) It sets session attributes
+b) It passes parameters to the included/forwarded resource
+c) It initializes variables
+d) It changes the response header
+✔️ Answer: b
+
+Which of the following is true about <jsp:include> and <jsp:forward>?
+a) Both are used to permanently transfer control
+b) Only <jsp:forward> transfers control and terminates current page execution
+c) <jsp:include> stops the current page execution
+d) None of the above
+✔️ Answer: b
+
+📌 JSF (JavaServer Faces)
+What is JSF?
+a) Java Swing Framework
+b) Java Servlet Framework
+c) A component-based web framework for Java
+d) A client-side scripting language
+✔️ Answer: c
+
+Why is JSF preferred in enterprise web applications?
+a) It's hard to configure
+b) Offers reusable UI components and MVC support
+c) Uses only Servlets
+d) Cannot handle events
+✔️ Answer: b
+
+Which design pattern does JSF primarily follow?
+a) Singleton
+b) MVC (Model-View-Controller)
+c) Factory
+d) Proxy
+✔️ Answer: b
+
+Which part of a JSF application handles business logic?
+a) View
+b) Controller
+c) Model (typically managed beans or backing beans)
+d) Lifecycle phase
+✔️ Answer: c
+
+Which JSF tag is used to define the form?
+a) <h:panelGrid>
+b) <h:form>
+c) <f:facet>
+d) <ui:composition>
+✔️ Answer: b
+
+Which tag is used to bind a JSF component to a server-side bean?
+a) action
+b) value
+c) method
+d) bind
+✔️ Answer: b
+
+Which of the following is NOT a valid scope in faces-config.xml?
+a) request
+b) session
+c) application
+d) flash
+✔️ Answer: d (Flash scope is available but not configured via faces-config.xml)
+
+In faces-config.xml, what happens if you define a bean name as loginBean but try to access #{LoginBean} in your page?
+a) JSF automatically converts case
+b) JSF throws a binding error
+c) JSF maps it to any available bean
+d) Page renders but returns null
+✔️ Answer: b
+
+To set a default value of a bean property through faces-config.xml, which tag is used?
+a) <default-value>
+b) <property-value>
+c) <value>
+d) <managed-property>
+✔️ Answer: d (with nested <value> inside)
+
+📌 Navigation
+Which of the following navigation rules in faces-config.xml supports redirection?
+a) <to-view-id>
+b) <redirect/> inside <navigation-case>
+c) faces-redirect=true in outcome
+d) Only annotations support redirect
+✔️ Answer: b
+
+Which attribute in <navigation-case> defines the logical outcome returned by an action method?
+a) <from-action>
+b) <from-outcome>
+c) <to-view-id>
+d) <result>
+✔️ Answer: b
+
+
+✅ III. Fill-in-the-Blanks
+To declare a JSF managed bean without annotations, the developer must use the __________ file.
+✔️ Answer: faces-config.xml
+
+The tag used to declare the class name of a bean is <__________>.
+✔️ Answer: managed-bean-class
+
+To keep a bean alive for the duration of a single HTTP request, we use <managed-bean-scope>__________</managed-bean-scope>.
+✔️ Answer: request
+
+
+
+✅ IV. Match the Columns – faces-config.xml Tags
+Tag	Purpose
+<managed-bean>	A. Declares a JSF backing bean
+<navigation-rule>	B. Controls page flow logic
+<managed-bean-scope>	C. Defines the lifespan of the bean
+<from-outcome>	D. Matches return value from method
+
+✔️ Matching Answer:
+
+<managed-bean> → A
+
+<navigation-rule> → B
+
+<managed-bean-scope> → C
+
+<from-outcome> → D
+
+
+✅ Bonus: True/False Questions (Quick Recap)
+
+@RequestScoped beans live across multiple views.
+❌ False
+
+<h:commandButton> must be inside an <h:form>.
+✔️ True
+
+Navigation rules in faces-config.xml are only required for external URL redirection.
+❌ False
+
+JSF 2.0 supports bean injection and property setting via XML.
+✔️ True
+
+You cannot use <redirect/> in faces-config.xml.
+❌ False
+
+You can define view parameters in faces-config.xml.
+❌ False – View parameters are generally handled in Facelets or programmatically.
+
+JSF allows you to override annotation-based beans using XML.
+✔️ True
+
+

@@ -1,0 +1,101 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS healthsure;
+USE healthsure;
+
+
+-- ===========================
+-- 1. User Table (Admin Users)
+-- ===========================
+CREATE TABLE User (
+    user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    user_name VARCHAR(255) NOT NULL UNIQUE,         -- Used for login
+    password VARCHAR(255) NOT NULL,                -- Hashed password
+    email VARCHAR(255) NOT NULL UNIQUE,            -- Used for OTP verification
+    status ENUM('ACTIVE', 'INACTIVE') NOT NULL DEFAULT 'INACTIVE',
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE Otp (
+    otp_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(150) NOT NULL,
+    otp_code VARCHAR(10) NOT NULL,
+    reason ENUM('SIGNUP', 'FORGOT_PASSWORD') NOT NULL,
+    status ENUM('INACTIVE', 'ACTIVE', 'EXPIRED') NOT NULL DEFAULT 'ACTIVE',
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    expires_at DATETIME NOT NULL
+);
+
+CREATE TABLE password_history (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    changed_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES User(user_id)
+);
+
+✅ OVERVIEW OF FLOW
+
+🔹 1. Signup
+Input: First Name, Last Name, Username, Email.
+
+Validation: Check if username or email already exists.
+
+If Exists: Reject signup, no OTP is sent.
+
+If Not Exists:
+
+Generate OTP and store in Otp table.
+
+Send OTP to email.
+
+Await OTP verification.
+
+On correct OTP:
+
+Create user with status = 'INACTIVE'.
+
+Redirect to login page.
+
+🔹 2. Login
+
+Input: Username and Password.
+
+Validation:
+
+If status = 'ACTIVE': Reject login (already logged in).
+
+If credentials are correct and status != 'ACTIVE':
+
+Mark status = 'ACTIVE'.
+
+Proceed to dashboard.
+
+Logout:
+
+On logout, mark status = 'INACTIVE'.
+
+🔹 3. Forgot Password
+
+Input: Username or Email.
+
+Validation: Must exist in User.
+
+If Exists:
+
+Generate OTP with reason 'FORGOT_PASSWORD', status 'ACTIVE'.
+
+Send OTP to email.
+
+After OTP verification:
+
+Redirect to Reset Password page.
+
+User enters new password + confirm password.
+
+Validate: Ensure new password ≠ old password.
+	  (new password does not match the last 3 passwords)
+
+If valid, update password and reset status to 'INACTIVE'.
+

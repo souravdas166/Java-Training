@@ -1,0 +1,22 @@
+package com.java.day3;
+
+public class StaticEx {
+	
+	  static int count;
+	
+	public void increment() {
+		count++;
+		System.out.println("Count is"  +count);
+	}
+	
+	public static void main(String[] args) {
+		StaticEx obj1 = new StaticEx();
+		StaticEx obj2 = new StaticEx();
+		StaticEx obj3 = new StaticEx();
+		
+		obj1.increment();
+		obj2.increment();
+		obj3.increment();
+	}
+
+}

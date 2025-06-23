@@ -1,0 +1,8 @@
+package com.java.day3;
+
+public class Snippet {
+	public static void main(String[] args) {
+		obj1.increment();
+	}
+}
+

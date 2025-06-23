@@ -1,0 +1,99 @@
+package com.java.admin.dao;
+
+import java.util.Date;
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
+
+import com.java.admin.model.EmailVerificationOtp;
+import com.java.admin.model.OtpStatus;
+import com.java.admin.model.User;
+import com.java.admin.util.SessionHelper;
+
+public class AdminDaoImpl implements AdminDao {
+
+    @Override
+    public boolean signUp(User userInput) {
+        Transaction transaction = null;
+        Session session = null;
+
+        try {
+            session = SessionHelper.getConnection().openSession();
+
+            // Check if username or email already exists
+            Criteria criteria = session.createCriteria(User.class)
+                .add(Restrictions.or(
+                    Restrictions.eq("username", userInput.getUsername()),
+                    Restrictions.eq("email", userInput.getEmail())
+                ));
+
+            List existingUsers = criteria.list();
+
+            if (!existingUsers.isEmpty()) {
+                return false;
+            }
+
+            // Check if email is verified via OTP
+            Criteria otpCriteria = session.createCriteria(EmailVerificationOtp.class)
+                .add(Restrictions.eq("email", userInput.getEmail()))
+                .add(Restrictions.eq("otpCode", userInput.getPasscode())) // OTP temporarily in passcode
+                .add(Restrictions.eq("status", OtpStatus.ACTIVE))
+                .add(Restrictions.gt("expiresAt", new Date()));
+
+            List validOtps = otpCriteria.list();
+
+            if (validOtps.isEmpty()) {
+                return false; // OTP invalid or expired
+            }
+
+            // Proceed to insert user
+            transaction = session.beginTransaction();
+            session.save(userInput);
+
+            // Expire OTP after use
+            EmailVerificationOtp usedOtp = (EmailVerificationOtp) validOtps.get(0);
+            usedOtp.setStatus(OtpStatus.EXPIRED);
+            session.update(usedOtp);
+
+            transaction.commit();
+            return true;
+
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (session != null) session.close();
+        }
+    }
+
+    public boolean saveEmailOtp(EmailVerificationOtp otp) {
+        Transaction tx = null;
+        Session session = null;
+        try ( session = SessionHelper.getConnection().openSession()) {
+            tx = session.beginTransaction();
+            session.save(otp);
+            tx.commit();
+            return true;
+        } catch (Exception e) {
+            if (tx != null) tx.rollback();
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean verifyOtp(String email, String otpCode) {
+        try (Session session = SessionHelper.getConnection().openSession()) {
+            Criteria criteria = session.createCriteria(EmailVerificationOtp.class)
+                .add(Restrictions.eq("email", email))
+                .add(Restrictions.eq("otpCode", otpCode))
+                .add(Restrictions.eq("status", OtpStatus.ACTIVE))
+                .add(Restrictions.gt("expiresAt", new Date()));
+
+            return !criteria.list().isEmpty();
+        }
+    }
+}

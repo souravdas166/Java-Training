@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source folder &apos;LMSDBFinal/lmsdb.properties&apos; to &apos;LmsDbFinal&apos;&#x0D;&#x0A;- Original project: &apos;LMSDBFinal&apos;&#x0D;&#x0A;- Original element: &apos;LMSDBFinal/lmsdb.properties&apos;&#x0D;&#x0A;- Renamed element: &apos;lmsdb.properties&apos;" description="Rename source folder &apos;lmsdb.properties&apos;" id="org.eclipse.jdt.ui.rename.source.folder" input="/lmsdb.properties" name="LmsDbFinal" stamp="1745649202452" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package com.java.lms.dao;
+
+import java.sql.SQLException;
+
+import com.java.lms.model.Employ;
+
+public interface EmployDao {
+	public Employ searchEmp(int empId) throws ClassNotFoundException, SQLException;
+}

@@ -1,0 +1,76 @@
+package com.java.admin.controller;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+
+import com.java.admin.model.User;
+import com.java.admin.model.UserStatus;
+import com.java.admin.service.AdminService;
+
+public class Controller {
+
+    private User user = new User();
+    private String otp; // <-- OTP input from user
+    private AdminService service = new AdminService(); // Use service instead of DAO
+    private boolean otpSent = false;
+    
+    
+    public boolean isOtpSent() {
+		return otpSent;
+	}
+
+	public void setOtpSent(boolean otpSent) {
+		this.otpSent = otpSent;
+	}
+
+	public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public String getOtp() {
+        return otp;
+    }
+
+    public void setOtp(String otp) {
+        this.otp = otp;
+    }
+
+    // Step 1: Send OTP to user's email
+    public String sendOtpToEmail() {
+        boolean otpSuccess = service.sendEmailOtp(user.getEmail());
+        if (otpSuccess) {
+            FacesContext.getCurrentInstance().addMessage(null,
+                new FacesMessage("OTP has been sent to your email."));
+            otpSent = true; // Navigate to OTP verification page
+        } else {
+            FacesContext.getCurrentInstance().addMessage(null,
+                new FacesMessage(FacesMessage.SEVERITY_ERROR, "Failed to send OTP. Try again.", null));
+        }
+        return null;
+    }
+
+    // Step 2: Verify OTP and register user
+    public String verifyOtpAndSignUp() {
+        user.setStatus(UserStatus.INACTIVE); // Set default status
+        boolean registered = service.registerUser(user, otp); // Pass user + OTP
+
+        if (registered) {
+            FacesContext.getCurrentInstance().addMessage(null,
+                new FacesMessage("Registration successful."));
+            otp = null;
+            otpSent = false;
+            user = new User(); // Reset form
+            
+      
+        } else {
+            FacesContext.getCurrentInstance().addMessage(null,
+                new FacesMessage(FacesMessage.SEVERITY_ERROR, "Registration failed. Invalid OTP or user already exists.", null));
+           
+        }
+        return null;
+    }
+}

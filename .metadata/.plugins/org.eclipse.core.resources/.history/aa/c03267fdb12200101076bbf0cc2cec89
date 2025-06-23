@@ -1,0 +1,93 @@
+package com.java.lms.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.java.lms.model.LeaveType;
+import com.java.lms.model.Status;
+import com.java.lms.util.ConnectionHelper;
+
+public class LeaveDaoImpl implements LeaveDao{
+
+	@Override
+	public String applyLeave(int empId, Date LeaveStartDate, Date LeaveEndDate, LeaveType LeaveType,
+			String LeaveReason) throws ClassNotFoundException, SQLException {
+		
+		
+		Date currentDate = new Date(System.currentTimeMillis());
+		
+		if(LeaveStartDate.before(currentDate) || LeaveEndDate.before(currentDate)) {
+			return "Leave start or end date cannot be in the past.";
+		}
+		if (LeaveStartDate.after(LeaveEndDate)) {
+	        return "Leave start date cannot be after leave end date.";
+	    }
+		
+		int leaveDays = calculateLeaveDays(LeaveStartDate,  LeaveEndDate);
+		int availableleave = getleave(empId);
+		
+		if (leaveDays > availableleave) {
+	        return "You do not have enough leave balance for this request.";
+	    }
+		
+		
+		
+		String cmd = "INSERT INTO Leave_History (LEAVE_ID, LEAVE_NO_OF_DAYS, LEAVE_MNGR_COMMENTS, EMP_ID, " +
+                "LEAVE_START_DATE, LEAVE_END_DATE, LEAVE_TYPE, LEAVE_REASON) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+		
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		
+		pstm.setInt(1, leaveDays);
+	    pstm.setString(2, "");
+	    pstm.setInt(3, empId);
+	    pstm.setDate(4, LeaveStartDate);
+	    pstm.setDate(5, LeaveEndDate); // Assuming manager comments not added during application
+	    pstm.setInt(6, leaveDays);
+	    pstm.setString(7, "PENDING");
+	    pstm.setString(8, LeaveReason);
+	    pstm.executeUpdate();
+	    return "Record inserted successfully.";
+}
+	
+	public int getleave(int empId) throws SQLException, ClassNotFoundException {
+		
+		String cmd = "Select EMP_AVAIL_LEAVE_BAL from Employee where EMP_ID =?";
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		pstm.setInt(1, empId);
+		
+		ResultSet rs = pstm.executeQuery();
+		if(rs.next()) {
+			return rs.getInt("EMP_AVAIL_LEAVE_BAL");
+		}
+		else {
+			return 0;
+		}
+	}
+	
+	public void updateleave(int empId , int leaveDays ) throws ClassNotFoundException, SQLException {
+		String cmd = "Update Employee Set EMP_AVAIL_LEAVE_BAL = EMP_AVAIL_LEAVE_BAL - ? where EMP_ID = ?";
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		pstm.setInt(1, leaveDays);
+	    pstm.setInt(2, empId);
+	    pstm.executeUpdate();
+
+	     System.out.println("Leave applied successfully and balance updated.");;
+		
+	}
+	
+		public int calculateLeaveDays(Date LeaveStartDate, Date LeaveEndDate) {
+			long diffInMillis = LeaveEndDate.getTime() - LeaveStartDate.getTime();
+		    return (int) (diffInMillis / (1000 * 60 * 60 * 24)) + 1;
+		}
+}	
+		
+	
+
+

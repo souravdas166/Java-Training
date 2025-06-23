@@ -1,0 +1,66 @@
+package com.java.admin.model;
+
+import java.sql.Date;
+
+public class PasswordResetOtp {
+	private int otpId;
+	private int empId;
+	private String otpCode;
+	private OtpStatus status;
+	private Date createdAt;
+	private Date expiresAt;
+	public int getOtpId() {
+		return otpId;
+	}
+	public void setOtpId(int otpId) {
+		this.otpId = otpId;
+	}
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getOtpCode() {
+		return otpCode;
+	}
+	public void setOtpCode(String otpCode) {
+		this.otpCode = otpCode;
+	}
+	public OtpStatus getStatus() {
+		return status;
+	}
+	public void setStatus(OtpStatus status) {
+		this.status = status;
+	}
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+	public Date getExpiresAt() {
+		return expiresAt;
+	}
+	public void setExpiresAt(Date expiresAt) {
+		this.expiresAt = expiresAt;
+	}
+	public PasswordResetOtp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public PasswordResetOtp(int otpId, int empId, String otpCode, OtpStatus status, Date createdAt, Date expiresAt) {
+		super();
+		this.otpId = otpId;
+		this.empId = empId;
+		this.otpCode = otpCode;
+		this.status = status;
+		this.createdAt = createdAt;
+		this.expiresAt = expiresAt;
+	}
+	@Override
+	public String toString() {
+		return "PasswordResetOtp [otpId=" + otpId + ", empId=" + empId + ", otpCode=" + otpCode + ", status=" + status
+				+ ", createdAt=" + createdAt + ", expiresAt=" + expiresAt + "]";
+	}
+}

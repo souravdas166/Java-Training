@@ -1,0 +1,17 @@
+package com.java.intf;
+
+public class Sourav implements ITraining{
+
+	@Override
+	public void name() {
+		System.out.println("Sourav");
+		
+	}
+
+	@Override
+	public void email() {
+		System.out.println("sourav@gmail.com");
+		
+	}
+
+}

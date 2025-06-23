@@ -1,0 +1,665 @@
+1. Hibernate Basics and Introduction
+
+Q1: Which of the following best describes Hibernate?
+A) A front-end JavaScript framework
+B) A lightweight ORM tool for Java
+C) A NoSQL database
+D) A Java EE application server
+
+Correct answer: B (Hibernate is an ORM framework for Java that maps objects to relational database tables)
+
+Q2: Which problem is mainly solved by using an ORM tool like Hibernate?
+A) Lack of UI design in Java
+B) Difficulty in mapping objects to database tables
+C) Multithreading in Java
+D) Creating stored procedures
+
+Correct answer: B (ORM tools abstract database interactions, solving object-table mapping issues)
+
+Q3: Hibernate can be used only with relational databases. Is this true?
+A) True
+B) False
+
+Correct answer: B (Hibernate has extensions like Hibernate OGM that support NoSQL databases)
+
+2. Hibernate Architecture
+
+Q4: Which component of Hibernate is responsible for creating Session objects?
+A) Configuration
+B) Transaction
+C) SessionFactory
+D) EntityManager
+
+Correct answer: C (SessionFactory is used to create Session objects, which are used for database interaction)
+
+Q5: What does the Hibernate Configuration class do?
+A) Manages caching
+B) Handles SQL transactions
+C) Loads configuration files and mappings
+D) Connects to the internet
+
+Correct answer: C (It reads configuration files like hibernate.cfg.xml and mapping info)
+
+Q6: Which is true about SessionFactory?
+A) It's created for each thread.
+B) It should be created once and reused.
+C) It is used to manage database schemas.
+D) It creates database triggers.
+
+Correct answer: B (SessionFactory is a heavy object and should be created once and reused across sessions)
+
+3. Session and SessionFactory
+
+Q7: Which of the following is true about Session?
+A) It is thread-safe and can be shared across threads.
+B) It is lightweight and non-thread-safe.
+C) It is created by Configuration directly.
+D) It is used to configure mappings.
+
+Correct answer: B (Session is not thread-safe and should not be shared across threads)
+
+Q8: What will be the output of the following code?
+
+
+SessionFactory factory = new Configuration().configure().buildSessionFactory();
+Session session1 = factory.openSession();
+Session session2 = factory.openSession();
+System.out.println(session1 == session2);
+
+
+A) true
+B) false
+C) Compilation error
+D) Runtime exception
+
+Correct answer: B (openSession() creates a new instance every time, so session1 != session2)
+
+4. Transaction Management
+
+Q9: Which Hibernate interface is used to manage transactions?
+A) SessionFactory
+B) Session
+C) Transaction
+D) Criteria
+
+Correct answer: C (Transaction interface is used to begin, commit, and rollback transactions)
+
+Q10: What happens if you don't commit a transaction in Hibernate?
+A) Data is auto-saved.
+B) Data is stored temporarily.
+C) Changes are rolled back.
+D) It depends on the database.
+
+Correct answer: C (Without commit, the changes are not persisted and are rolled back)
+
+Q11: Which of the following is NOT a valid transaction boundary in Hibernate?
+A) session.beginTransaction()
+B) session.getTransaction().begin()
+C) transaction.commit()
+D) session.startTransaction()
+
+Correct answer: D (startTransaction() is not a valid method in Hibernate)
+
+5. HQL (Hibernate Query Language)
+
+Q12: Which is true about HQL?
+A) HQL is case-sensitive for keywords.
+B) HQL supports only SQL syntax.
+C) HQL works with object names, not table names.
+D) HQL cannot perform joins.
+
+Correct answer: C (HQL queries are based on class and property names, not table or column names)
+
+Q13: What will be the output of the following code, assuming the Employee table has 5 records?
+
+Query query = session.createQuery("from Employee");
+List<Employee> list = query.list();
+System.out.println(list.size());
+
+A) 0
+B) 5
+C) ClassCastException
+D) QuerySyntaxException
+
+Correct answer: B (from Employee returns all rows as mapped entities)
+
+6. Criteria API
+
+Q14: Which is true about Criteria API?
+A) It allows dynamic query creation using SQL syntax
+B) It was deprecated in Hibernate 5 in favor of JPA Criteria
+C) It does not support projections
+D) It only works for H2 databases
+
+Correct answer: B (The original Hibernate Criteria API was deprecated and replaced with JPA Criteria API)
+
+Q15: Which method is used to add restrictions in Criteria API?
+A) setRestrictions()
+B) add() with Restrictions
+C) where()
+D) applyFilter()
+
+Correct answer: B (You use add() with Restrictions, e.g., criteria.add(Restrictions.eq("id", 1)))
+
+7. Native SQL Queries
+
+Q16: Native SQL queries in Hibernate:
+A) Use Java syntax for queries
+B) Are faster but bypass Hibernate's cache
+C) Are deprecated
+D) Cannot return entities
+
+Correct answer: B (They bypass the first-level cache and are used for performance but reduce abstraction)
+
+Q17: What will be the output of the following code?
+
+Query query = session.createSQLQuery("SELECT * FROM Employee");
+List list = query.list();
+System.out.println(list.get(0).getClass().getName());
+A) Employee
+B) java.util.HashMap
+C) [Ljava.lang.Object;
+D) org.hibernate.SQLQueryException
+
+Correct answer: C (By default, native queries return results as Object[] unless mapped explicitly)
+
+Q18: Which file is typically used to configure Hibernate in an XML-based setup?
+A) persistence.xml
+B) hibernate.xml
+C) hibernate.cfg.xml
+D) orm.xml
+
+Correct answer: C (The hibernate.cfg.xml file is used to define database configuration and mapping details)
+
+Q19: Which of the following best represents the full form of ORM in Hibernate context?
+A) Object-Relational Mapping
+B) Object-Runtime Memory
+C) Oracle-Relational Mapper
+D) Object-Read Mode
+
+Correct answer: A (Hibernate is an ORM framework that maps Java objects to database tables)
+
+Q20: In which layer of a Java application is Hibernate typically used?
+A) View layer
+B) Controller layer
+C) Service layer
+D) Data access layer
+
+Correct answer: D (Hibernate is part of the data access layer, interacting with the database)
+
+Q21: Which Hibernate component provides database connection pooling?
+A) Session
+B) SessionFactory
+C) ConnectionProvider
+D) Transaction
+
+Correct answer: C (ConnectionProvider is responsible for managing database connections, including pooling)
+
+Q22: What is the role of the ServiceRegistry in Hibernate?
+A) It manages logging configuration
+B) It holds all configuration XML files
+C) It builds SessionFactory with services like JDBC and transactions
+D) It stores entity mappings
+
+Correct answer: C (ServiceRegistry is a newer addition used for bootstrap services like transactions, JDBC, etc.)
+
+3. Session and SessionFactory (Extended)
+Q23: What happens if you try to use a Session after calling session.close()?
+A) It throws an IllegalStateException
+B) It automatically reopens
+C) It returns null on queries
+D) It continues to work with cached data
+
+Correct answer: A (Session objects are invalid once closed and using them throws exceptions)
+
+Q24: Which of the following is true about getCurrentSession() in Hibernate?
+A) Always returns a new Session instance
+B) Returns a thread-bound session that is closed automatically
+C) Is not supported in Hibernate
+D) Returns a Session shared across all threads
+
+Correct answer: B (getCurrentSession() binds session to current thread and is closed automatically at transaction end)
+
+Q25: What will happen if a Hibernate transaction is committed without making any changes?
+A) An exception is thrown
+B) A commit is issued, but no changes are made
+C) The session is flushed automatically
+D) Data from previous sessions is committed
+
+Correct answer: B (Hibernate issues a commit, but no SQL is generated if there are no changes)
+
+Q26: Which property must be set in the configuration to enable automatic transaction management using getCurrentSession()?
+A) hibernate.transaction.mode
+B) hibernate.auto.transaction
+C) hibernate.current_session_context_class
+D) hibernate.session.auto_mode
+
+Correct answer: C (This configuration tells Hibernate how to bind the current session to a thread)
+
+Q27: Which of the following is valid HQL syntax to get all employees with name 'John'?
+A) SELECT * FROM Employee WHERE name = 'John'
+B) SELECT e FROM Employee e WHERE e.name = 'John'
+C) FROM employee WHERE name = 'John'
+D) SELECT e.* FROM Employee e WHERE name = 'John'
+
+Correct answer: B (HQL uses object names and their fields, not table/column names)
+
+Q28: Which of the following HQL queries will fetch only the employee names and salaries?
+A) SELECT name, salary FROM Employee
+B) FROM Employee name, salary
+C) SELECT e.name, e.salary FROM Employee e
+D) GET name, salary FROM Employee
+
+Correct answer: C (HQL syntax requires object alias and dot notation)
+
+Q29: Which class is commonly used along with Criteria to add conditions?
+A) Restriction
+B) Predicate
+C) Constraint
+D) Restrictions
+
+Correct answer: D (Restrictions is a helper class to build condition clauses in Criteria)
+
+Q30: What is the use of Projections in Criteria API?
+A) To insert new rows
+B) To define column aliases
+C) To define select clause (e.g., count, sum)
+D) To map SQL keywords
+
+Correct answer: C (Projections is used for aggregate functions like count, avg, min, max)
+
+Q31: How can you map the result of a native SQL query to an entity class in Hibernate?
+A) Using addScalar()
+B) Using addEntity()
+C) Using ResultTransformer
+D) Using setProjection()
+
+Correct answer: B (addEntity() maps native query results to entity objects)
+
+Q32: Which method allows you to bind named parameters in a native SQL query?
+A) setVariable()
+B) setParameter()
+C) bind()
+D) mapValue()
+
+Correct answer: B (setParameter() is used to bind values to named or positional parameters)
+
+Q33: What is true about native SQL queries and portability?
+A) Native SQL queries are database-agnostic
+B) Native SQL queries are highly portable across databases
+C) They are tightly coupled to database dialects
+D) They cannot use joins
+
+Correct answer: C (Native SQL queries are less portable because they depend on specific database SQL dialects)
+
+Q34: What is the output of the following code?
+
+Configuration cfg = new Configuration();
+cfg.configure("hibernate.cfg.xml");
+SessionFactory sf = cfg.buildSessionFactory();
+System.out.println(sf.isClosed());
+A) true
+B) false
+C) Compilation error
+D) Runtime error
+
+Correct answer: B
+(SessionFactory is open immediately after creation)
+
+Q35: Given the following HQL:
+
+Query q = session.createQuery("FROM Product WHERE price BETWEEN 100 AND 200");
+List list = q.list();
+System.out.println(list.size());
+Assume 3 Product records exist with price values 120, 180, 210.
+What will be printed?
+
+A) 1
+B) 2
+C) 3
+D) 0
+
+Correct answer: B
+(Only 120 and 180 fall within the specified range)
+
+Q36: What will this code print?
+
+Session session = sessionFactory.openSession();
+session.beginTransaction();
+Product product = session.get(Product.class, 1);
+session.close();
+System.out.println(product.getName());
+Assume Product with ID=1 exists.
+
+A) Compilation error
+B) NullPointerException
+C) Name is printed correctly
+D) LazyInitializationException
+
+Correct answer: C
+
+Q37: What is the output of the following query?
+
+Query query = session.createSQLQuery("SELECT COUNT(*) FROM Employee");
+List list = query.list();
+System.out.println(list.get(0).getClass().getName());
+A) java.lang.Integer
+B) java.math.BigInteger
+C) java.lang.Long
+D) [Ljava.lang.Object;
+
+Correct answer: B
+(Native SQL COUNT(*) returns BigInteger by default in Hibernate)
+
+✅ Assertion / True-False Based
+Q38: Assertion: Session is both a factory for Transaction objects and a container for persistent objects.
+
+A) True
+B) False
+
+Correct answer: A
+(Session manages transactions and persistent object states)
+
+Q39:You can create multiple SessionFactory instances per application for better scalability.
+
+A) True
+B) False
+
+Correct answer: B
+(SessionFactory is heavyweight and should ideally be singleton per DB config)
+
+Q40:HQL does not support subqueries or aggregate functions.
+
+A) True
+B) False
+
+Correct answer: B
+(HQL supports both subqueries and aggregate functions like count(), sum(), etc.)
+
+Q41:Native SQL queries in Hibernate allow access to database-specific features that HQL may not support.
+
+A) True
+B) False
+
+Correct answer: A
+(Native SQL gives full SQL dialect control)
+
+
+Q42:You are working on a legacy project using XML mapping. You notice the developer wrote this in Employee.hbm.xml:
+
+<class name="Employee" table="EMPLOYEE">
+   <id name="id" column="EMP_ID">
+       <generator class="increment"/>
+   </id>
+   <property name="name"/>
+</class>
+What is the purpose of <generator class="increment"/>?
+
+A) Always sets ID to 1
+B) Uses auto-increment of database
+C) Calculates ID in memory by incrementing
+D) Delegates ID generation to application code
+
+Correct answer: C
+(Increment generator uses Hibernate-side in-memory ID management, not database auto-increment)
+
+Q43: A Hibernate query is written as follows:
+
+
+Query query = session.createQuery("FROM Order o WHERE o.customer.name = :name");
+query.setParameter("name", "Alice");
+List<Order> orders = query.list();
+Which Hibernate feature is demonstrated here?
+
+A) Lazy fetching
+B) Native SQL join
+C) Path expressions (object graph navigation)
+D) Batch update
+
+Correct answer: C
+(o.customer.name uses dot notation to navigate object relationships)
+
+Q44: You are debugging a Hibernate app. The log shows:
+
+Hibernate: select this_.emp_id as emp1_0_0_, this_.name as name2_0_0_ from EMPLOYEE this_
+Which of the following is true?
+
+A) Hibernate is using HQL
+B) Hibernate is executing a native SQL query
+C) Hibernate is using Criteria API
+D) Hibernate is doing implicit joins
+
+Correct answer: A
+(This format is typical of HQL auto-translated to SQL)
+
+Q45: Which of the following scenarios would benefit most from using the Criteria API?
+
+A) Running a batch update
+B) Building static reports
+C) Creating a dynamic search filter form
+D) Executing stored procedures
+
+Correct answer: C
+(Criteria API is ideal for building queries dynamically at runtime)
+
+Q46: What is true about Hibernate’s first-level cache?
+
+A) It is shared across multiple sessions
+B) It is enabled by default and bound to a Session
+C) It stores data in an external memory store
+D) It works only with Criteria API
+
+Correct answer: B
+
+Q47: Which of the following will avoid LazyInitializationException?
+
+A) Call session.clear() before accessing the proxy
+B) Keep the session open while accessing lazy fields
+C) Use Criteria API instead of HQL
+D) Fetch entity using load() instead of get()
+
+Correct answer: B
+
+Q48: In XML mapping, which element is used for mapping a one-to-many relationship?
+
+A) <join>
+B) <element>
+C) <set> with <key> and <one-to-many>
+D) <many>
+
+Correct answer: C
+
+Q49: What happens if you configure two <class> entries for the same entity in hibernate.cfg.xml?
+
+A) Hibernate merges them
+B) The last one overrides the first
+C) Duplicate mapping exception
+D) Hibernate chooses based on classpath order
+
+Correct answer: C
+
+Q50: How do you implement pagination using Criteria API?
+
+A) setPage()
+B) setFirstResult() and setMaxResults()
+C) setLimit() and setOffset()
+D) setRange()
+
+Correct answer: B
+(setFirstResult() defines the offset; setMaxResults() defines the number of results)
+
+Q51: Which method is used in Criteria API to apply sorting?
+
+A) criteria.sort()
+B) criteria.order()
+C) criteria.addOrder(Order.asc("property"))
+D) criteria.applyOrder("asc", "property")
+
+Correct answer: C
+(addOrder() with Order.asc() or Order.desc() is used to sort results)
+
+Q52: What is the main advantage of using Named Queries in Hibernate?
+
+A) They are automatically faster
+B) They are compiled at runtime
+C) They promote reusability and central query management
+D) They don't require mapping
+
+Correct answer: C
+
+Q53: How do you define a Named Query in XML mapping?
+
+A)
+
+<named-query name="getAllEmployees">
+  <query>FROM Employee</query>
+</named-query>
+
+B)
+
+<sql-query name="getAllEmployees">SELECT * FROM EMPLOYEE</sql-query>
+
+C)
+
+
+<query name="getAllEmployees">SELECT * FROM Employee</query>
+
+D)
+
+<query name="employeeQuery">FROM EMP</query>
+
+Correct answer: D
+
+Q54: In a mini-project, your Employee entity is mapped to XML. On saving a new Employee, you get this error:
+
+org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save()
+
+What is the likely cause?
+
+A) Database column is not nullable
+B) XML mapping is missing cascade
+C) ID generator strategy is not defined
+D) Session is not flushed
+
+Correct answer: C
+(You didn’t define <generator> in XML, so Hibernate doesn’t know how to assign the ID)
+
+Q55: You’re working on a project where you need to retrieve only employee names using HQL. Which of the following is valid and optimized?
+
+A) FROM Employee
+B) SELECT name FROM Employee
+C) SELECT e.name FROM Employee e
+D) SELECT * FROM Employee
+
+Correct answer: C
+
+
+Q56: Which HQL statement correctly performs an inner join between Employee and Department?
+
+A) FROM Employee e INNER JOIN Department d
+B) FROM Employee e JOIN e.department d
+C) SELECT * FROM Employee JOIN Department
+D) JOIN e.department FROM Employee
+
+Correct answer: B
+(Uses object reference join)
+
+
+Q57: You accidentally omit the <property> tag for a field in your XML mapping. What happens?
+
+A) Hibernate skips mapping that property
+B) A runtime exception is thrown
+C) Field is treated as a transient
+D) The session fails to start
+
+Correct answer: A
+(Hibernate simply doesn’t persist fields not mapped)
+
+Q58: Which of the following HQL queries demonstrates a subquery?
+
+A) FROM Employee e WHERE e.salary > (SELECT avg(salary) FROM Employee)
+
+B) SELECT * FROM Employee WHERE id = 1
+
+C) SELECT e FROM Employee e WHERE e.salary = 5000
+
+D) FROM Department
+
+✅ Correct answer: A
+Subqueries are supported in HQL, and this example shows a correlated subquery.
+
+Q59: Which aggregate function is NOT directly supported in HQL?
+
+A) sum()
+
+B) avg()
+
+C) median()
+
+D) count()
+
+✅ Correct answer: C
+HQL supports most standard SQL aggregates, except non-standard ones like median().
+
+Q60: How do you apply aliasing in Criteria API in Hibernate 3.6?
+
+A) criteria.createAlias("department", "d")
+
+B) criteria.alias("department", "d")
+
+C) criteria.joinAlias("department", "d")
+
+D) criteria.setAlias("department", "d")
+
+✅ Correct answer: A
+You use createAlias() to alias associations in Criteria queries.
+
+Q61: How do you define a Named Query using annotations in Hibernate 3.6?
+
+A)
+	@NamedQuery(name = "getAllEmployees", query = "FROM Employee")
+B)
+	@Named("getAllEmployees")
+	Query query = "FROM Employee";
+C)
+	@Query("FROM Employee")
+
+D)
+
+	@NamedQuery("FROM Employee")
+
+Correct answer: A
+This is the correct JPA-style annotation supported in Hibernate 3.6.
+
+Q62: How do you perform an inner join using native SQL and map it to an entity?
+
+A)
+
+session.createSQLQuery("SELECT * FROM EMPLOYEE e JOIN DEPT d ON e.dept_id = d.id")
+       .addEntity(Employee.class);
+B)
+
+session.createSQLQuery("SELECT * FROM Employee, Department").list();
+C)
+
+session.createQuery("JOIN e.department d").list();
+D)
+
+session.getSQL("FROM EMPLOYEE JOIN DEPT").list();
+
+ Correct answer: A
+You must use addEntity() to map native SQL results to entity classes.
+
+Q63: In Criteria API, how do you retrieve only selected properties (projections)?
+A)
+criteria.setProjection(Projections.property("name"))
+B)
+criteria.projection("name")`
+
+C)  
+criteria.select("name")`
+
+D)  
+criteria.getOnly("name")`
+
+Correct answer: A  

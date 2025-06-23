@@ -1,0 +1,26 @@
+package com.java.day1;
+
+public class Max {
+
+	public void check( int a, int b,int c) {
+		
+		if(a < b ) {
+			System.out.println(b+"b is Greater");
+		}
+		if(b<c) {
+			System.out.println(c+"c is greater");
+		}
+		else {
+			System.out.println("a is greater");
+		}
+	}
+	public static void main(String[] args) {
+		int a,b,c;
+		a=1;
+		b=2;
+		c=3;
+		Max t = new Max();
+		t.check(a,b,c);
+	}
+}
+ 

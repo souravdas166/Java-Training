@@ -1,0 +1,92 @@
+package com.java.lmsdb.dao;
+
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.util.List;
+
+import com.java.lmsdb.model.Leave;
+import com.java.lmsdb.model.LeaveStatus;
+
+public class LeaveDaoImpl implements LeaveDao {
+	static EmployDao empDaoImp;
+	static LeaveDao leaveDaoImpl;
+	static StringBuilder sb;
+	
+	static {
+		empDaoImp=new EmployDaoImpl();
+		sb=new StringBuilder();
+	}
+	
+	
+	public String applyALeaveBal(Leave leave) throws ClassNotFoundException, SQLException {
+		
+	}
+	
+	public List<Leave> allLeaveTakenByEmpBal(int empId) throws ClassNotFoundException, SQLException{
+		return leaveDaoImpl.readAllLeaveTakenDaoImpl(empId);
+	}
+	
+	public List<Leave> showPendingLeaves(int managerId) throws ClassNotFoundException, SQLException{
+		return leaveDaoImpl.showPendingLeaveDaoImpl(managerId);
+	}
+	
+	
+	public static boolean validateLeave(Leave leave) throws ClassNotFoundException, SQLException {
+		
+		
+		LocalDate fst=leave.getStartDate().toLocalDate();
+		LocalDate lst=leave.getEndDate().toLocalDate();
+		leave.setNoOfDays((int)ChronoUnit.DAYS.between( fst,lst));
+		boolean check =true;
+		
+		sb.setLength(0);
+		if(lst.isBefore(LocalDate.now()) || fst.isBefore(LocalDate.now())) {
+			sb.append("start date should not be past ");
+			check=false;
+		}
+		if(lst.isBefore(LocalDate.now()) ) {
+			sb.append("end date should not be past");
+			check=false;
+		}
+		if(lst.isBefore(fst)) {
+			sb.append("start date should not be greater than  end date ");
+			check=false;
+		}
+		if(leave.getNoOfDays()>=empDaoImp.getEmployLeaveById(leave.getEmpId())) {
+			sb.append(" insufficient no of leave day");
+			check=false;
+		}
+		
+		
+		return check;
+	}
+
+	@Override
+	public String applyALeaveDaoImpl(Leave leave) throws ClassNotFoundException, SQLException {
+		
+		if(validateLeave(leave)) {
+			empDaoImp.setEmployLeaveDayDaoImpl(leave.getEmpId(),empDaoImp.getEmployLeaveById(leave.getEmpId())-leave.getNoOfDays());
+			return  leaveDaoImpl.applyALeaveDaoImpl(leave);
+		}
+		return sb.toString();
+	}
+
+	@Override
+	public List<Leave> readAllLeaveTakenDaoImpl(int employId) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Leave> showPendingLeaveDaoImpl(int empAsManagerId) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String changeLeaveStatusDaoImple(int empAsManagerId, int leaveId, LeaveStatus status, String comments)
+			throws ClassNotFoundException, SQLException {
+		return leaveDaoImpl.changeLeaveStatusDaoImple(empAsManagerId, leaveId, status, comments);
+	}
+}

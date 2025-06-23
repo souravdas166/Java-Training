@@ -1,0 +1,708 @@
+2025-06-09 15:13:39,178 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2025-06-09 15:15:39,816 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013 [637])
+2025-06-09 15:15:39,820 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013
+2025-06-09 15:15:39,820 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\aopalliance-1.0.jar
+2025-06-09 15:15:39,821 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\guice-5.1.0.jar
+2025-06-09 15:15:39,821 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\httpclient-4.5.14.jar
+2025-06-09 15:15:39,822 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\httpcore-4.4.16.jar
+2025-06-09 15:15:39,822 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\jansi-2.4.1.jar
+2025-06-09 15:15:39,822 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\jcl-over-slf4j-1.7.36.jar
+2025-06-09 15:15:39,822 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-artifact-3.9.9.jar
+2025-06-09 15:15:39,823 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-builder-support-3.9.9.jar
+2025-06-09 15:15:39,823 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-compat-3.9.9.jar
+2025-06-09 15:15:39,823 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-core-3.9.9.jar
+2025-06-09 15:15:39,823 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-embedder-3.9.9.jar
+2025-06-09 15:15:39,823 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-model-3.9.9.jar
+2025-06-09 15:15:39,824 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-model-builder-3.9.9.jar
+2025-06-09 15:15:39,824 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-plugin-api-3.9.9.jar
+2025-06-09 15:15:39,824 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-repository-metadata-3.9.9.jar
+2025-06-09 15:15:39,824 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-api-1.9.22.jar
+2025-06-09 15:15:39,824 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-connector-basic-1.9.22.jar
+2025-06-09 15:15:39,824 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-impl-1.9.22.jar
+2025-06-09 15:15:39,824 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-named-locks-1.9.22.jar
+2025-06-09 15:15:39,826 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-provider-3.9.9.jar
+2025-06-09 15:15:39,826 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-spi-1.9.22.jar
+2025-06-09 15:15:39,826 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-file-1.9.22.jar
+2025-06-09 15:15:39,826 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-http-1.9.22.jar
+2025-06-09 15:15:39,826 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-wagon-1.9.22.jar
+2025-06-09 15:15:39,827 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-util-1.9.22.jar
+2025-06-09 15:15:39,827 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-settings-3.9.9.jar
+2025-06-09 15:15:39,827 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-settings-builder-3.9.9.jar
+2025-06-09 15:15:39,827 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-shared-utils-3.4.2.jar
+2025-06-09 15:15:39,828 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\org.eclipse.sisu.inject-0.9.0.M3.jar
+2025-06-09 15:15:39,828 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\org.eclipse.sisu.plexus-0.9.0.M3.jar
+2025-06-09 15:15:39,828 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-build-api-0.0.7.jar
+2025-06-09 15:15:39,828 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-build-api-1.2.0.jar
+2025-06-09 15:15:39,828 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-cipher-2.0.jar
+2025-06-09 15:15:39,829 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-classworlds-2.8.0.jar
+2025-06-09 15:15:39,829 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-component-annotations-2.1.0.jar
+2025-06-09 15:15:39,829 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-interpolation-1.27.jar
+2025-06-09 15:15:39,829 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-sec-dispatcher-2.0.jar
+2025-06-09 15:15:39,829 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-utils-3.5.1.jar
+2025-06-09 15:15:39,830 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-xml-3.0.1.jar
+2025-06-09 15:15:39,830 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-file-3.5.3.jar
+2025-06-09 15:15:39,830 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-http-3.5.3.jar
+2025-06-09 15:15:39,830 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-http-shared-3.5.3.jar
+2025-06-09 15:15:39,831 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-provider-api-3.5.3.jar
+2025-06-09 15:15:39,834 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.4.0.jre [16])
+2025-06-09 15:15:39,834 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\com.google.guava_33.4.0.jre.jar
+2025-06-09 15:15:39,834 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.17 [1004])
+2025-06-09 15:15:39,835 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\slf4j.api_2.0.17.jar
+2025-06-09 15:15:39,835 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [1014])
+2025-06-09 15:15:39,835 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2025-06-09 15:15:39,835 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20230504-0748 [1013])
+2025-06-09 15:15:39,836 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\javax.annotation_1.3.5.v20230504-0748.jar
+2025-06-09 15:15:39,836 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [74])
+2025-06-09 15:15:39,836 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.apache.commons.cli_1.9.0.jar
+2025-06-09 15:15:39,836 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [76])
+2025-06-09 15:15:39,837 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-06-09 15:15:39,837 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [17])
+2025-06-09 15:15:39,837 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\souravkumard\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-06-09 15:15:39,844 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\SOURAV~1\AppData\Local\Temp\m2e-archetypeGenerator13893740368225114646":
+2025-06-09 15:15:39,851 [Worker-17: Launching mavenrun-2e46727d-896b-4eb4-bc48-32cd30da8a2b] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -DarchetypeGroupId=org.glassfish.jersey.archetypes -DarchetypeArtifactId=jersey-quickstart-webapp -DarchetypeVersion=4.0.0-M2 -DgroupId=Infnite -DartifactId=Admin -Dversion=0.0.1-SNAPSHOT -Dpackage=com.java.admin.model -DoutputDirectory="C:\Java Training\FTest" -B -Dstyle.color=always -U archetype:generate
+2025-06-09 15:16:15,111 [Worker-4: Creating jersey-quickstart-webapp] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Java Training\FTest\Admin\pom.xml
+2025-06-09 15:16:16,912 [Worker-4: Creating jersey-quickstart-webapp] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-09 15:16:18,233 [Worker-4: Creating jersey-quickstart-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Admin/src/main/java
+2025-06-09 15:16:18,236 [Worker-4: Creating jersey-quickstart-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Admin/src/main/resources
+2025-06-09 15:16:18,240 [Worker-4: Creating jersey-quickstart-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Admin/src/test/java
+2025-06-09 15:16:18,242 [Worker-4: Creating jersey-quickstart-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Admin/src/test/resources
+2025-06-09 15:16:21,226 [Worker-4: Creating jersey-quickstart-webapp] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 6 sec
+2025-06-09 15:16:22,129 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 15:16:22,133 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 15:17:45,134 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 15:17:45,138 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 15:22:37,392 [Worker-24: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-09 15:22:37,498 [Worker-24: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-09 15:22:37,615 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-09 15:22:37,664 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-09 15:22:38,639 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 15:22:38,645 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 15:22:38,646 [Worker-24: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Admin
+2025-06-09 15:22:38,649 [Worker-24: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Admin
+2025-06-09 15:24:08,559 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 15:24:08,562 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 15:24:23,095 [main] INFO  org.hibernate.cfg.Environment - Hibernate 3.5.6-Final
+2025-06-09 15:24:23,146 [main] INFO  org.hibernate.cfg.Environment - hibernate.properties not found
+2025-06-09 15:24:23,149 [main] INFO  org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2025-06-09 15:24:23,158 [main] INFO  org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2025-06-09 15:25:40,131 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 15:25:40,135 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 15:41:13,542 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 15:41:13,553 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:03:16,568 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:03:16,573 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:03:30,025 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:03:30,028 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:04:38,268 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:04:38,271 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:05:33,229 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:05:33,234 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:09:34,859 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:09:34,862 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:09:45,237 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:09:45,238 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:11:19,034 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:11:19,036 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:45:43,951 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:45:43,958 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:46:39,754 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:46:39,758 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:47:17,647 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:47:17,650 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:48:15,618 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:48:15,621 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:48:18,814 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:48:18,816 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:52:21,921 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:52:21,924 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:55:35,171 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:55:35,173 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:56:53,861 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:56:53,863 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:58:12,988 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:58:12,991 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 17:58:33,348 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 17:58:33,350 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 18:51:40,366 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 18:51:40,373 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 19:12:24,735 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 19:12:24,739 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 19:13:15,789 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 19:13:15,792 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 19:14:36,585 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 19:14:36,587 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 19:17:36,348 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 19:17:36,351 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-09 23:09:41,289 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-09 23:10:36,926 [Worker-19: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-09 23:10:37,061 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-09 23:10:37,438 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-09 23:10:37,443 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 09:46:02,450 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 09:49:28,127 [Worker-1: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 09:49:28,315 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 09:49:28,847 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 09:49:28,853 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 09:49:52,378 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 09:49:52,382 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 09:50:27,190 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 09:50:27,193 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 09:50:42,421 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 09:50:42,423 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 09:53:42,899 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 09:53:42,901 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:04:55,144 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:04:55,147 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:20:52,061 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:20:52,064 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:22:31,578 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:22:31,581 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:31:45,982 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:31:45,985 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:39:20,805 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:39:20,808 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:43:21,424 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 10:43:27,424 [Worker-3: reload maven project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 10:43:27,630 [Worker-3: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:43:43,655 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:43:43,660 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:44:59,006 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:44:59,008 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:48:07,519 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:48:07,523 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:49:16,762 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:49:16,766 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:52:48,551 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:52:48,553 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:54:10,680 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-10 10:54:10,750 [Worker-25: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 10:54:10,868 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:54:10,927 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:54:11,639 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:54:11,642 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:54:11,643 [Worker-25: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Admin
+2025-06-10 10:54:11,644 [Worker-25: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Admin
+2025-06-10 10:54:33,004 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-10 10:54:33,044 [Worker-26: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 10:54:34,327 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:54:34,449 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:54:35,317 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:54:35,320 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:54:35,321 [Worker-26: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Admin
+2025-06-10 10:54:35,321 [Worker-26: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Admin
+2025-06-10 10:54:57,737 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-10 10:54:57,761 [Worker-27: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 10:54:58,518 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:54:58,636 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:54:59,231 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:54:59,234 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:54:59,234 [Worker-27: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Admin
+2025-06-10 10:54:59,234 [Worker-27: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Admin
+2025-06-10 10:55:17,327 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-06-10 10:55:17,565 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-10 10:55:17,608 [Worker-26: Updating Maven Project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 10:55:18,534 [Worker-26: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:55:18,647 [Worker-26: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 10:55:19,383 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Admin/src/main/java
+2025-06-10 10:55:19,386 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Admin/src/main/resources
+2025-06-10 10:55:19,387 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Admin/src/test/java
+2025-06-10 10:55:19,389 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Admin/src/test/resources
+2025-06-10 10:55:21,763 [Worker-26: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Admin
+2025-06-10 10:55:21,792 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 2.00 sec 
+2025-06-10 10:55:22,225 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:55:22,229 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 10:55:22,229 [Worker-20: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Admin
+2025-06-10 10:55:22,230 [Worker-20: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Admin
+2025-06-10 10:57:03,868 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 10:57:03,872 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:01:55,456 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:01:55,458 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:08:08,836 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:08:08,841 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:09:11,851 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:09:11,853 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:09:38,963 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:09:38,967 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:13:05,729 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:13:05,732 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:14:05,639 [Worker-38: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-06-10 11:14:06,139 [Worker-38: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-10 11:14:06,208 [Worker-38: Updating Maven Project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 11:14:07,716 [Worker-38: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 11:14:08,616 [Worker-38: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Admin/src/main/java
+2025-06-10 11:14:08,617 [Worker-38: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Admin/src/main/resources
+2025-06-10 11:14:08,617 [Worker-38: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Admin/src/test/java
+2025-06-10 11:14:08,617 [Worker-38: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Admin/src/test/resources
+2025-06-10 11:14:08,928 [Worker-38: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Admin
+2025-06-10 11:14:08,954 [Worker-38: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
+2025-06-10 11:14:09,819 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:14:09,827 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:14:09,828 [Worker-33: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Admin
+2025-06-10 11:14:09,828 [Worker-33: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Admin
+2025-06-10 11:15:00,597 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 11:17:33,662 [Worker-4: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 11:17:35,477 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 11:17:35,936 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:17:35,940 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:19:17,511 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:19:17,514 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:27:55,559 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:27:55,563 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:32:10,455 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:32:10,458 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:33:30,502 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:33:30,505 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:33:40,450 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:33:40,452 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:34:00,387 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:34:00,389 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:36:31,365 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:36:31,368 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:37:51,879 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:37:51,880 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:41:11,183 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:41:11,185 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:42:46,657 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:42:46,659 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:46:54,340 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:46:54,343 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:49:02,671 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:49:02,673 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:54:16,272 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:54:16,275 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:55:21,717 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:55:21,719 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 11:59:06,159 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 11:59:06,161 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 12:01:15,097 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 12:01:15,099 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 12:35:45,899 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 12:35:45,904 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 12:37:31,357 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 12:37:31,360 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 12:41:17,773 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 12:41:17,776 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 12:43:40,855 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 12:43:40,858 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 12:43:47,178 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 12:43:47,181 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 12:44:54,286 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 12:44:54,288 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:21:21,366 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:21:21,379 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:24:54,471 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:24:54,476 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:25:33,416 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:25:33,418 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:25:48,972 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:25:48,975 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:25:54,589 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:25:54,592 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:26:44,728 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:26:44,731 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:27:59,873 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:27:59,876 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:28:10,739 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:28:10,741 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:29:31,914 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:29:31,917 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:30:07,683 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:30:07,685 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:39:01,867 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:39:01,871 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:39:15,734 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:39:15,735 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:39:30,343 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:39:30,345 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 14:39:43,079 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 14:39:43,081 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 15:23:32,664 [Worker-24: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1933)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1757)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:627)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 common frames omitted
+2025-06-10 15:26:52,151 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-06-10 15:26:54,844 [Worker-11: Updating Maven Dependencies] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:154)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 14 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1933)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1757)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:627)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 16 common frames omitted
+2025-06-10 15:28:49,270 [Worker-21: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Java Training\FTest\Admin\pom.xml: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2)  @ line 1, column 2
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Java Training\FTest\Admin\pom.xml: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2)  @ line 1, column 2
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-06-10 15:30:42,942 [Worker-13: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1933)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1757)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:627)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 common frames omitted
+2025-06-10 15:31:12,176 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 15:31:12,662 [Worker-10: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Java Training\FTest\Admin\pom.xml: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2)  @ line 1, column 2
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Java Training\FTest\Admin\pom.xml: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2)  @ line 1, column 2
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-06-10 15:31:13,050 [Worker-11: Updating Maven Dependencies] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:154)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 14 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1933)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1757)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:627)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 16 common frames omitted
+2025-06-10 15:36:29,918 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-06-10 15:36:29,938 [Worker-24: Updating Maven Project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 14 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1933)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1757)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:627)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 16 common frames omitted
+2025-06-10 15:36:29,942 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-06-10 15:37:06,182 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 15:37:06,766 [Worker-7: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Java Training\FTest\Admin\pom.xml: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2)  @ line 1, column 2
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Java Training\FTest\Admin\pom.xml: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2)  @ line 1, column 2
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-06-10 15:37:07,791 [Worker-3: Updating Maven Dependencies] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:154)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 14 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not ` (position: START_DOCUMENT seen `... @1:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1933)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1757)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:627)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 16 common frames omitted
+2025-06-10 15:38:34,916 [Worker-10: reload maven project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 15:38:36,357 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Infnite:Admin:0.0.1-SNAPSHOT @ C:\Java Training\FTest\Admin\pom.xml.
+2025-06-10 15:38:36,483 [Worker-14: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 15:38:37,420 [Worker-10: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 15:38:37,899 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 15:38:38,065 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 15:38:39,599 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 15:38:39,604 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 16:10:07,914 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 16:10:07,920 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 16:18:08,072 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 16:22:52,797 [Worker-11: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 16:22:54,441 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 16:22:54,825 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 16:22:54,830 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 16:39:17,420 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 16:46:47,277 [Worker-25: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 16:46:49,009 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 16:46:49,390 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 16:46:49,395 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 17:08:49,390 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 17:08:49,393 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 17:09:11,202 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 17:09:11,204 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 17:10:19,602 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 17:10:19,605 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 18:11:55,904 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 18:11:55,910 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 21:22:23,631 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-10 21:34:15,132 [Worker-28: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-10 21:34:17,149 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-10 21:42:45,894 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 21:42:45,899 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 21:47:43,786 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 21:47:43,788 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 21:59:34,156 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 21:59:34,160 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 22:13:37,518 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 22:13:37,521 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 22:16:36,857 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 22:16:36,859 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 22:21:10,196 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 22:21:10,199 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 22:24:26,497 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 22:24:26,499 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 22:25:30,449 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 22:25:30,451 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 22:28:04,029 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 22:28:04,030 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-10 22:29:34,663 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-10 22:29:34,665 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-11 09:33:27,118 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-11 09:33:33,134 [Worker-5: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-11 09:33:35,834 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-11 09:43:07,068 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-11 09:43:07,077 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-11 18:54:14,353 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-06-12 10:11:43,043 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-12 10:12:29,913 [Worker-7: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-12 10:12:32,019 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-12 10:12:32,451 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-12 10:12:32,456 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-12 16:09:09,475 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-12 16:09:09,480 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-12 16:09:13,302 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-12 16:09:13,306 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-12 16:09:45,059 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-12 16:09:45,062 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 09:59:15,879 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-06-13 10:23:20,987 [Worker-22: reload maven project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+2025-06-13 10:23:23,391 [Worker-22: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-06-13 11:19:40,214 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 11:19:40,220 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 11:33:19,080 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 11:33:19,083 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 11:38:50,938 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 11:38:50,942 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 11:39:31,833 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 11:39:31,836 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 11:39:53,177 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 11:39:53,180 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 11:43:49,050 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 11:43:49,052 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 11:50:53,627 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 11:50:53,629 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 12:54:55,898 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 12:54:55,902 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 12:58:47,513 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 12:58:47,517 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:16:04,533 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:16:04,539 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:17:19,519 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:17:19,524 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:17:38,497 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:17:38,501 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:18:03,087 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:18:03,090 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:19:00,502 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:19:00,505 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:19:16,810 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:19:16,812 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:19:54,322 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:19:54,324 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:20:05,364 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:20:05,369 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:20:31,351 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:20:31,354 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:22:27,691 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:22:27,695 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:22:35,836 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:22:35,838 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:24:30,256 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:24:30,259 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:49:49,954 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:49:49,958 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:50:00,956 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:50:00,958 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:52:01,714 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:52:01,716 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:54:32,783 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:54:32,786 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 16:56:12,109 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 16:56:12,112 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 17:03:00,106 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 17:03:00,108 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 17:08:58,648 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 17:08:58,657 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 17:09:52,551 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 17:09:52,552 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources
+2025-06-13 17:10:52,466 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\main\resources
+2025-06-13 17:10:52,469 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Java Training\FTest\Admin\src\test\resources

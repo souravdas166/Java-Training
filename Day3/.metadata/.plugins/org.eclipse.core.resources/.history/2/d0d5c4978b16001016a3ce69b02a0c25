@@ -1,0 +1,24 @@
+package com.java.day3;
+
+public class Employ {
+	int empno;
+	String name;
+	double basic;
+	
+	
+	@Override
+	public String toString() {
+		return "Employ [empno=" + empno + ", name=" + name + ", basic=" + basic + "]";
+	}
+
+
+	public static void main(String[] args) {
+		Employ e1 = new Employ();
+		e1.name = "Sourav";
+		e1.empno = 1;
+		e1.basic = 88834;
+		
+		System.out.println(e1);
+	}
+	
+}

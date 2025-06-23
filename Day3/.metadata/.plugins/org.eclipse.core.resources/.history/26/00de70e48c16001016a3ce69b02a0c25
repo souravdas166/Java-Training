@@ -1,0 +1,22 @@
+package com.java.day3;
+
+public class OverloadEx1 {
+	public void show(int x) {
+		System.out.println("Show w.r.t to Integer" + x);
+	}
+	
+	public void show(double x) {
+		System.out.println("Show w.r.t to Double"+x);
+	}
+	
+	public void show (String x) {
+		System.out.println("Show w.r.t to String"+x)
+	}
+	
+	public static void main(String[] args) {
+		OverloadEx1 n = new OverloadEx1();
+		n.show(12);
+		n.show(12.5);
+		n.show("Sourav");
+	}
+}

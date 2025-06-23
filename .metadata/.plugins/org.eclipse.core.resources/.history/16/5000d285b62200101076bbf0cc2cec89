@@ -1,0 +1,112 @@
+package com.java.lms.main;
+
+import java.sql.Date;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+import com.java.lms.dao.EmployDao;
+import com.java.lms.dao.EmployDaoImpl;
+import com.java.lms.dao.LeaveDao;
+import com.java.lms.dao.LeaveDaoImpl;
+import com.java.lms.model.Employ;
+import com.java.lms.model.Leave;
+import com.java.lms.model.LeaveType;
+
+public class LMSDbMain {
+	static Scanner sc;
+	
+	
+	static {
+		sc = new Scanner(System.in);
+	}
+	
+	public static void main(String[] args) {
+		int choice;
+		do {
+			System.out.println("\n Welcome to Leave Management System:");
+			System.out.println("Enter The option for your choice:");
+            System.out.println("Enter 1 to Search Employ: ");
+            System.out.println("Enter 2 to Display All Emp Record: ");
+            System.out.println("Enter 3 to Apply Leave");
+            System.out.println("Enter 0 for exit");
+            
+            choice = sc.nextInt();
+            try {
+            switch(choice) {
+            case 1: 
+				searchEmpMain();
+            	break;
+            case 2:
+				showEmpMain();
+				break;
+            case 3:
+            	applyLeaveMain();
+                break;
+
+			default:
+				System.out.println("Invalid Choice");	
+            }}
+            catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            }while(choice != 0);
+	}
+
+		public static void applyLeaveMain() throws ClassNotFoundException, SQLException{
+			
+			    Scanner sc = new Scanner(System.in);
+			    LeaveDao leaveDao = new LeaveDaoImpl();
+
+			    System.out.print("Enter Employee ID: ");
+			    int empId = sc.nextInt();
+			    sc.nextLine(); 
+
+			    System.out.print("Enter Start Date (yyyy-mm-dd): ");
+			    String startDateStr = sc.nextLine();
+			    Date startDate = Date.valueOf(startDateStr);
+
+			    System.out.print("Enter End Date (yyyy-mm-dd): ");
+			    String endDateStr = sc.nextLine();
+			    Date endDate = Date.valueOf(endDateStr);
+
+			    System.out.print("Enter Leave Reason: ");
+			    String reason = sc.nextLine();
+
+			    System.out.print("Enter Leave Type (EL/SL/ML): ");
+			    String typeStr = sc.next();
+			    LeaveType leaveType = LeaveType.valueOf(typeStr.toUpperCase());
+
+			    
+			    String result = leaveDao.applyLeave(empId, startDate, endDate, leaveType, reason);
+
+			    
+			    System.out.println(result);
+			
+
+	}
+
+		public static void showEmpMain() throws ClassNotFoundException, SQLException {
+			EmployDao employDao = new EmployDaoImpl();
+		List<Employ> empList = employDao.showEmp();
+		for ( Employ emp : empList) {
+			System.out.println(emp);
+		}
+		
+		
+	}
+
+	public static void searchEmpMain() throws ClassNotFoundException, SQLException{
+		int empid;
+		EmployDao employDao = new EmployDaoImpl();
+		System.out.println("Enter Emp Id To Search");
+		empid = sc.nextInt();
+		System.out.println(employDao.searchEmp(empid));
+	}
+}

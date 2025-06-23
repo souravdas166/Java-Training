@@ -1,0 +1,5 @@
+package com.java.lmsdb.model;
+
+public class Leave {
+
+}

@@ -1,0 +1,9 @@
+package com.java.lms.dao;
+
+import java.sql.Date;
+
+import com.java.lms.model.LeaveType;
+
+public interface LeaveDao {
+	public String applyLeave(int empId, Date LeaveStartDate, Date LeaveEndDate, LeaveType LeaveType , String LeaveReason);
+}

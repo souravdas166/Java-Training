@@ -1,0 +1,15 @@
+package com.java.day3;
+
+public class ConsEx {
+	
+	static {
+		System.out.println("Ststic Constructor");
+	}
+	ConsEx(){
+	System.out.println("Instance Constructor");	
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

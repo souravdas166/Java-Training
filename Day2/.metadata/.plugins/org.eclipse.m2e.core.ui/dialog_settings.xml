@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Java Training\Day2\BankProjectJDBC\src\main\java\com\java\bankproject\main\CreateAccountMain.java"/>
+			<item value="C:\Java Training\Day2\JDBCRealtime\src\main\java\com\java\jdbcreal\dao\EmployDaoImpl.java"/>
+			<item value="C:\Java Training\Day2\Swiggy\src\com\java\swiggy\dao\OrderDAOImpl.java"/>
+			<item value="C:\Java Training\Day2\Swiggy\src\com\java\swiggy\main\Main.java"/>
+			<item value="C:\Java Training\Day2\Resturant\src\com\java\OrderMain\OrderMain.java"/>
+			<item value="C:\Java Training\Day2\com.java.day2"/>
+			<item value="C:\Java Training\Day2\JunitExample\pom.xml"/>
+			<item value="C:\Java Training\Day2\LeaveManagement\src\com\java\lms\bal\Lmsbal.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.java.phonepay.util"/>
+			<item value="com.java.bankproject.model"/>
+			<item value="com.java.jdbcreal"/>
+		</list>
+		<list key="groupId">
+			<item value="Infinite"/>
+		</list>
+		<list key="artifactId">
+			<item value="PhonePay"/>
+			<item value="BankProjectJDBC"/>
+			<item value="JDBCRealtime"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

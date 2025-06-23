@@ -1,0 +1,22 @@
+package com.java.inh;
+
+public class First {
+	
+	public void show () {
+		System.out.println("Show The Method form Class First");
+	}
+	
+
+	public class second extends First{
+		public void display () {
+			System.out.println("Show Method from Class Second");
+		}
+	
+	
+	public static void main(String[] args) {
+		second d = new second();
+		d.show();
+		d.display();
+	}
+	}
+}

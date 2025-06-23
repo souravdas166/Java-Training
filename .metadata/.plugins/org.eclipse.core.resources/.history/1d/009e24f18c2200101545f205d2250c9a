@@ -1,0 +1,73 @@
+package com.java.lms.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.java.lms.model.LeaveType;
+import com.java.lms.util.ConnectionHelper;
+
+public class LeaveDaoImpl implements LeaveDao{
+
+	@Override
+	public String applyLeave(int empId, Date LeaveStartDate, Date LeaveEndDate, LeaveType LeaveType,
+			String LeaveReason) throws ClassNotFoundException, SQLException {
+		
+		
+		Date currentDate = new Date(System.currentTimeMillis());
+		
+		if(LeaveStartDate.before(currentDate) || LeaveEndDate.before(currentDate)) {
+			return "Leave start or end date cannot be in the past.";
+		}
+		if (LeaveStartDate.after(LeaveEndDate)) {
+	        return "Leave start date cannot be after leave end date.";
+	    }
+		
+		int leaveDays = calculateTotalLeaveDays(Date LeaveStartDate, Date LeaveEndDate);
+		int availableleave = updateleave(empId);
+		
+		if (leaveDays > availableleave) {
+	        return "You do not have enough leave balance for this request.";
+	    }
+		String cmd = "Insert into Leave_History where EMP_ID= ?, LEAVE_START_DATE = ? ,LEAVE_END_DATE = ?, LEAVE_TYPE = ? ," 
+				+ "LEAVE_MNGR_COMMENTS = ?, LEAVE_NO_DAYS = ? , LEAVE_STATUS =? ,LEAVE_REASON = ?";
+		
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		
+		pstm.setInt(1, empId);
+		pstm.setDate(2, LeaveStartDate);
+		pstm.setDate(3, LeaveEndDate);
+		pstm.setString(4, LeaveType.toString());
+		pstm.setString(5, LeaveReason);
+		pstm.setString(6, LeaveStatus.toString());
+		return "Record inserted Succesfully";
+	}
+	
+	
+	
+	
+	public int updateleave(int empId) throws SQLException {
+		
+		String cmd = "Select EMP_AVAIL_LEAVE_BAL from Employee where EMP_ID =?";
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		pstm.setInt(1, empId);
+		
+		ResultSet rs = pstm.executeQuery();
+		if(rs.next()) {
+			return rs.getInt("EMP_AVAIL_LEAVE_BAL");
+		}
+		else {
+			return 0;
+		}
+		
+		public int calculateLeaveDays(Date LeaveStartDate, Date LeaveEndDate) {
+			long diffInMillis = endDate.getTime() - startDate.getTime();
+		    return (int) (diffInMillis / (1000 * 60 * 60 * 24)) + 1;
+		
+	}
+
+}

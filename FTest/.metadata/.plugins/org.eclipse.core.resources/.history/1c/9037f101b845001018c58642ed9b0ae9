@@ -1,0 +1,20 @@
+package com.java.admin.dao;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
+
+import com.java.admin.model.User;
+import com.java.admin.util.SessionHelper;
+
+public class AdminDaoImpl implements AdminDao{
+	
+	SessionFactory sf;
+	Session ss;
+	@Override
+	public boolean signUp(User userInput) {
+		Sessio
+	}
+}

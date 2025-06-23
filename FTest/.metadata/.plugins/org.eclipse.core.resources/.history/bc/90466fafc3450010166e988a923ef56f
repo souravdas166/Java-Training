@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.java.admin.model.User" table="User">
+        <id name="empId" column="EmpId">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstName" column="FirstName" type="string" />
+        <property name="lastName" column="LastName" type="string" />
+        <property name="username" column="UserName" type="string" unique="true" />
+        <property name="passcode" column="Passcode" type="string" />
+        <property name="email" column="Email" type="string" unique="true" />
+        <property name="status" column="Status" type="org.hibernate.type.EnumType" >
+        <param name="enumClass">com.java.admin.model.UserStatus</param>
+    <param name="useNamed">true</param>
+    </property>
+
+        <!-- One-to-many mapping to PasswordResetOtp -->
+        <set name="passwordResetOtps" inverse="true" cascade="all" lazy="true">
+            <key column="EmpId"/>
+            <one-to-many class="com.java.admin.model.PasswordResetOtp"/>
+        </set>
+    </class>
+</hibernate-mapping>

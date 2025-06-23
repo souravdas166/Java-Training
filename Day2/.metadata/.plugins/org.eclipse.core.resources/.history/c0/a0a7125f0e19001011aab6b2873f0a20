@@ -1,0 +1,22 @@
+package com.java.exam;
+
+public class Question1 {
+	public static void test(String str) {
+		String[] arr= str.split("");
+		String s = "";
+		
+		for(String c: arr) {
+			if(!c.isEmpty()) {
+				s+=c;
+				s+=" ";
+			}
+		
+			System.out.println(s);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		test("dufgfh    wcknc    nlcn");
+	}
+}

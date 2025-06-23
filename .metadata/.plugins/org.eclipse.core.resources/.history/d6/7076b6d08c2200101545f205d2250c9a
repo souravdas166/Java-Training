@@ -1,0 +1,24 @@
+package com.java.lms.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.java.lms.model.LeaveType;
+import com.java.lms.util.ConnectionHelper;
+
+public class LeaveDaoImpl implements LeaveDao{
+
+	@Override
+	public String applyLeave(int empId, Date LeaveStartDate, Date LeaveEndDate, LeaveType LeaveType,
+			String LeaveReason) throws ClassNotFoundException, SQLException {
+		String cmd = "Insert into Leave_History where EMP_ID= ?, LEAVE_START_DATE = ? ,LEAVE_END_DATE = ?, LEAVE_TYPE = ?";
+		
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		return "Record inserted Succesfully";
+	}
+	
+
+}

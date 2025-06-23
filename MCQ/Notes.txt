@@ -1,0 +1,146 @@
+📌 Breakdown of Java Memory Areas (simplified):
+Memory Area	Stores
+Heap	Objects created using new (instance variables)
+Stack	Method call frames, local variables
+Method Area / MetaSpace	Class-level metadata, static variables, method bytecode
+PC Register	Current instruction being executed
+Native Method Stack	For native (non-Java) methods
+
+
+🧠 So what’s the default in Hibernate 3.6?
+| Type of Field                          | Default Fetch Type              |
+| -------------------------------------- | ------------------------------- |
+| **Basic fields** (e.g., `String name`) | `EAGER` — loaded immediately    |
+| **@OneToOne, @ManyToOne**              | `EAGER` (Hibernate 3.6 default) |
+| **@OneToMany, @ManyToMany**            | `LAZY` — loaded on demand       |
+
+✅ Summary (Easy-to-Remember)
+
+| Concept                                                    | Eager   | Lazy   |
+| ---------------------------------------------------------- | ------- | ------ |
+| Loads immediately                                          | ✅ Yes   | ❌ No   |
+| Loads only when accessed                                   | ❌ No    | ✅ Yes  |
+| Needs open session to fetch?                               | ❌ No    | ✅ Yes  |
+| Causes `LazyInitializationException` if session is closed? | ❌ No    | ✅ Yes  |
+| Default for basic fields                                   | ✅ Eager | ❌      |
+| Default for collections                                    | ❌       | ✅ Lazy |
+
+
+
+Types of Joins in Hibernate HQL
+| Join Type            | Description                                                                                  | HQL Keyword                        | Notes                                                        		|
+| -------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------ 		|
+| **Inner Join**       | Returns records where both entities match                                                    | `JOIN` or `INNER JOIN`             | Default if just `JOIN` is used                               		|
+| **Left Outer Join**  | Returns all records from the left entity, plus 
+			matching from right entity (null if no match) | `LEFT JOIN` or `LEFT OUTER JOIN`   | Useful to include entities even if related 			entity is missing 		|
+| **Right Outer Join** | Returns all records from right entity, plus matching from left entity                        | `RIGHT JOIN` or `RIGHT OUTER JOIN` | Less commonly used                                           		|
+| **Fetch Join**       | Joins entities and **fetches associations eagerly** to avoid lazy loading                    | `JOIN FETCH`                       | Loads associated objects in same query                       		|
+
+
+
+A Functional Interface in Java can have:
+
+Exactly ONE abstract method
+
+Any number of default methods
+
+Any number of static methods
+
+
+🔁 QUICK REFERENCE SUMMARY
+Type				Syntax					Example
+Static Method			ClassName::methodName			Integer::parseInt
+Instance Method (object)	object::methodName			printer::print
+Instance Method (type)		ClassName::methodName			String::compareToIgnoreCase
+Constructor			ClassName::new				ArrayList::new
+
+
+🔹 map() in Java
+Purpose: Transform elements of a stream.
+
+Operation Type: One-to-one transformation.
+
+Return Type: A new stream with transformed elements.
+
+Use case: Change or project each element (e.g., convert strings to uppercase, square numbers, etc.)
+
+🔹 reduce() in Java
+Purpose: Aggregate all elements into a single result.
+
+Operation Type: Many-to-one.
+
+Return Type: A single value (or Optional if no identity value is provided).
+
+Use case: Summing numbers, finding the max, concatenating strings, etc.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+EJB is a specification that which allows you to create readily available components.
+
+EJB implemented on middle Tier of Application , where server Components are deployed into application server, for that we can send no of client request.
+
+What is the difference between Web Serverand Application Server?
+
+Ans: Webserver used to deploy application , where application server uses to deploy business objects(server components) and Application.
+
+
+
+Flow Structure of EJB: 
+
+Client (JSF) ──calls──> Stub ──marshals──> Network ──> Server (EJB Container)
+                                         <--unmarshals<── 
+                                         ──executes EJB Method─>
+                                         ──marshals result──> Network 
+                                         <--unmarshals<── Stub ←── returns result
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+🔁 JSF Request Processing Lifecycle (in order):
+Restore View
+
+Apply Request Values
+
+Process Validations
+
+Update Model Values ← ✅ This comes before "Invoke Application"
+
+Invoke Application
+
+Render Response
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+🔄 JSP Lifecycle Steps:
+Translation Phase
+➤ The JSP file is converted into a Servlet by the JSP engine.
+(e.g., login.jsp → login_jsp.java)
+
+Compilation Phase
+➤ The generated servlet (.java file) is compiled into a class (.class file).
+
+Class Loading
+➤ The servlet class is loaded into memory by the classloader.
+
+Instantiation
+➤ An instance of the servlet class is created by the container.
+
+Initialization (jspInit())
+➤ The container calls jspInit() method once in the servlet's lifetime.
+You can override this for any initial setup like opening a DB connection.
+
+Request Processing (_jspService())
+➤ Every time the JSP is requested by a client, the container calls _jspService(HttpServletRequest, HttpServletResponse) method.
+➤ This method contains the actual logic for processing client requests and generating responses.
+
+Destruction (jspDestroy())
+➤ When the server decides to remove the JSP from memory (e.g., shutdown), it calls jspDestroy() to allow for cleanup.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Comparable interface has compareTo() — defines natural ordering inside the class itself.
+
+Comparator interface has compare() — allows custom or multiple sorting strategies, defined outside the class.
+
+

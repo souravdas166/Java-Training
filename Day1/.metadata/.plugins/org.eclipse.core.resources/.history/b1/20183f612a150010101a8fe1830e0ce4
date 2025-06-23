@@ -1,0 +1,39 @@
+package com.java.day1;
+
+import java.util.*;
+
+public class ElectricBill {
+	
+	public static void Slab(int unit) {
+		double amt = 0;
+		if(unit<= 90) {
+			 amt = unit * 1;
+			System.out.println("Amt Of Electric bill"+amt);
+		}
+		else if(unit <= 150) {
+			amt = 90 *1 + (unit -90)*1.5;
+			System.out.println("Amt Of Electric bill"+amt);	
+		}
+		else if (unit <=200) {
+			amt = 90*1 + 60*1.5 + (unit - 150)*2;
+			System.out.println("Amt Of Electric bill"+amt);
+		}
+		else if (unit <= 250) {
+			amt = 90*1 + 60*1.5 + 50*2 + (unit -200)*2.5;
+			System.out.println("Amt Of Electric bill"+amt);
+		}
+		else {
+			amt = 90 *1 + 60 *1.5 + 50*2+ 50*2.5 + (unit - 250)*3;
+			System.out.println("Amt Of Electric bill"+amt);
+		}
+		
+		public static void main(String[] args) {
+			
+			int unit = 200;
+			Slab(unit);
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+package com.java.exam;
+
+public class Question3 {
+	void convert(int num) {
+		
+		
+		String result ="";
+		
+		String [] units = {"","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelvw","Thirteen","Fourteen","Fivteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"
+	};
+		
+		String[] tens = {"","", "twenty","Thirty","fourty","Fifty","Sixty","Seventy","Eighty","Ninety","Hundred"
+};
+		
+		if(num<=0 || num>9999) {
+			System.out.println("Out of range");
+		}
+		if(num>= 1000) {
+			result = result +units[num/1000]+"thousand";
+			num%=1000;
+		}
+		if(num>=100) {
+			result = result + units[num/100] + "hundred";
+		}
+		if(num>0) {
+			if(num<20) {
+				result =  result +units[num];
+			}
+			else {
+				result+=tens[num/10]+" ";
+				result+=units[num%10];
+			}
+		}
+		System.out.println(result.trim());
+		
+	}
+	
+	public static void main(String[] args) {
+		Question3 b = new Question3();
+		b.convert(567);
+	}
+}

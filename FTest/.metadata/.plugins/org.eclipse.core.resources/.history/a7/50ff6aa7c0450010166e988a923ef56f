@@ -1,0 +1,32 @@
+package com.java.admin.controller;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+
+import com.java.admin.dao.AdminDao;
+import com.java.admin.dao.AdminDaoImpl;
+import com.java.admin.model.User;
+
+public class Controller {
+	private User user = new User();
+	private AdminDao dao = new AdminDaoImpl();
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public String AdminSignUp(user) {
+		boolean result = dao.signUp(user);
+		if (result) {
+            FacesContext.getCurrentInstance().addMessage(null,
+                new FacesMessage("Registration successful."));
+            user = new User(); // reset form
+            return "success";
+        } else {
+            FacesContext.getCurrentInstance().addMessage(null,
+                new FacesMessage(FacesMessage.SEVERITY_ERROR, "User already exists!", null));
+            return null;
+        }
+	}
+}

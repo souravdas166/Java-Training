@@ -1,0 +1,79 @@
+package com.java.lms.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.java.lms.model.Employ;
+import com.java.lms.util.ConnectionHelper;
+
+public class EmployDaoImpl implements EmployDao{
+
+	@Override
+	public Employ searchEmp(int empId)  throws ClassNotFoundException, SQLException{
+		String cmd = "select * from Employee where EMP_Id = ?";
+		
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		
+		pstm.setInt(1, empId);
+		
+		ResultSet rs = pstm.executeQuery();
+		
+		Employ emp = new Employ();
+		
+		if(rs.next()) {
+			emp.setEmpName(rs.getString("EMP_NAME"));
+			emp.setEmpMail(rs.getString("EMP_MAIL"));
+			emp.setEmpAvlLeave(rs.getInt("EMP_AVAIL_LEAVE_BAL"));
+			emp.setEmpDept(rs.getString("EMP_DEPT"));
+			emp.setEmpJoinDt(rs.getDate("EMP_DT_JOIN"));
+			emp.setEmpMob(rs.getString("EMP_MOB_NO"));
+			emp.setEmpManId(rs.getInt("EMP_MANAGER_ID"));	
+		}
+		return emp;
+		
+	}
+
+	@Override
+	public List<Employ> showEmp() throws ClassNotFoundException, SQLException {
+		
+		String cmd  = "Select * from Employee";
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		
+		ResultSet rs = pstm.executeQuery();
+		List<Employ> empList = new ArrayList<Employ>();
+		
+		while(rs.next()) {
+			
+			Employ emp = new Employ();
+			emp.setEmpName(rs.getString("EMP_NAME"));
+			emp.setEmpMail(rs.getString("EMP_MAIL"));
+			emp.setEmpAvlLeave(rs.getInt("EMP_AVAIL_LEAVE_BAL"));
+			emp.setEmpDept(rs.getString("EMP_DEPT"));
+			emp.setEmpJoinDt(rs.getDate("EMP_DT_JOIN"));
+			emp.setEmpMob(rs.getString("EMP_MOB_NO"));
+			emp.setEmpManId(rs.getInt("EMP_MANAGER_ID"));
+			
+			empList.add(emp);
+		}
+		return empList;
+	}
+	
+	public void updateleave(int empId , int leaveDays ) throws ClassNotFoundException, SQLException {
+		String cmd = "Update Employee Set EMP_AVAIL_LEAVE_BAL = EMP_AVAIL_LEAVE_BAL - ? where EMP_ID = ?";
+		Connection conn = ConnectionHelper.getConnection();
+		PreparedStatement pstm = conn.prepareStatement(cmd);
+		pstm.setInt(1, leaveDays);
+	    pstm.setInt(2, empId);
+	    pstm.executeUpdate();
+
+	     System.out.println("Leave applied successfully and balance updated.");;
+		
+	}
+
+}

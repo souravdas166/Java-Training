@@ -1,0 +1,9 @@
+package com.java.day3;
+
+public class TEST {
+public static void main(String[] args) {
+	Integer num = 400;
+	Integer num = 400;
+	System.out.println(num.equals(num));
+}
+}

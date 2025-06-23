@@ -1,0 +1,19 @@
+package com.java.abs;
+
+public abstract class Absd {
+	int empno;
+	String name;
+	double basic;
+	
+	public Absd (int empno, String name, double basic) {
+		this.empno = empno;
+		this.name = name;
+		this.basic = basic;
+	}
+
+	@Override
+	public String toString() {
+		return "Absd [empno=" + empno + ", name=" + name + ", basic=" + basic + "]";
+	}
+	
+}

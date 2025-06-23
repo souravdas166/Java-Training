@@ -1,0 +1,59 @@
+package com.java.admin.dao;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
+
+import com.java.admin.model.User;
+
+public class DaoImpl implements AdminDao{
+	
+	SessionFactory sf;
+	Session ss;
+	@Override
+	public boolean signUp(User userInput) {
+		Transaction transaction = null;
+	    Session session = null;
+
+	    try {
+	        session = HibernateUtil.getSessionFactory().openSession();
+
+	        // Use Criteria without generics
+	        Criteria criteria = session.createCriteria(User.class);
+	        criteria.add(Restrictions.or(
+	            Restrictions.eq("username", userInput.getUsername()),
+	            Restrictions.eq("email", userInput.getEmail())
+	        ));
+
+	        List existingUsers = criteria.list(); // Raw List, no warning
+
+	        if (!existingUsers.isEmpty()) {
+	            return false; // User with same username or email exists
+	        }
+
+	        transaction = session.beginTransaction();
+
+	        User user = new User();
+	        user.setFirstName(userInput.getFirstName());
+	        user.setLastName(userInput.getLastName());
+	        user.setUsername(userInput.getUsername());
+	        user.setPasscode(userInput.getPasscode()); // Already hashed
+	        user.setEmail(userInput.getEmail());
+	        user.setStatus(userInput.getStatus());
+
+	        session.save(user);
+	        transaction.commit();
+	        return true;
+
+	    } catch (Exception e) {
+	        if (transaction != null) transaction.rollback();
+	        e.printStackTrace();
+	    } finally {
+	        if (session != null) session.close();
+	    }
+	    return false;
+	}
+	
+}
